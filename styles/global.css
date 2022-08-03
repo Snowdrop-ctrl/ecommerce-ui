@@ -49,6 +49,10 @@ header {
     gap: 32px;
 }
 
+.left-menu li a {
+    color: black;
+}
+
 .right-icons {
     margin-right: 162px;
     display: flex;
@@ -82,6 +86,7 @@ header {
     font-weight: 700;
     font-size: 80px;
     margin: auto;
+    font-family: 'Jost';
 }
 
 .hero-media {
@@ -106,7 +111,75 @@ header {
     font-weight: bold;
 }
 .hero-contain {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.best-deals {
+    margin-top: 99px;
+}
+
+.best-deal-text {
+    text-align: center;
+    font-weight: bold;
+    font-family: "jost";
+    font-size: 39px;
+}
+
+/*.best-deal-slider {*/
+/*    margin-top: 56px;*/
+/*    display: flex;*/
+/*    gap: 10px;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.img-div {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 0px 52px 0px;*/
+}
+
+.view-all-button {
+    text-align: center;
+    margin-top: 56px;
+}
+
+.best-deals {
+    font-family: "Jost";
+}
+
+.view-all-button button{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 18px 70px 14px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Jost';
+}
+
+.slider-text {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.slider-deleted-price {
+    color: #9E9E9E;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.slider-price {
+    color: #FF705C;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price-name-div {
+    text-align: center;
 }

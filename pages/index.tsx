@@ -1,7 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const Home: NextPage = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    };
+
   return (
     <div>
       <Head>
@@ -9,9 +21,23 @@ const Home: NextPage = () => {
         <meta name="description" content="Ecommerce app" />
         <link rel="icon" href="/W.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
-              <link rel="preconnect" href="https://fonts.gstatic.com" />
-                  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
-                        rel="stylesheet"/>
+              <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                  <link
+                      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Jost:wght@200;400;700&display=swap"
+                      rel="stylesheet"/>
+          <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+          <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+          <link
+              rel="stylesheet"
+              type="text/css"
+              charSet="UTF-8"
+              href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+          />
+          <link
+              rel="stylesheet"
+              type="text/css"
+              href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
       </Head>
 
         <div className="hero-img">
@@ -33,9 +59,9 @@ const Home: NextPage = () => {
                     <nav className="menu">
                         <ul className="left-menu">
                             <li><a href="#">Women</a></li>
-                            <li>Men</li>
-                            <li>Collection</li>
-                            <li>Outlet</li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">Outlet</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -65,26 +91,74 @@ const Home: NextPage = () => {
             </header>
         </div>
 
-        <section className="hero">
-            <div className='hero-content'>
-                <p className="first-sentence">With an outstanding style, only for you</p>
-                <p className="second-sentence"> Exclusively designed for you</p>
-            </div>
-            <div className="hero-media">
-                <div className='hero-contain'>
-                    <img src="/hero-women.png" alt="standing women"/>
-                    <button className="for-her">For Her</button>
-                </div>
-                <div className='hero-contain'>
-                    <img src="/hero-men.png" alt="standing women"/>
-                    <button className="for-men">For Him</button>
-                </div>
-            </div>
-
-        </section>
-
       <main>
+          <section className="hero">
+              <div className='hero-content'>
+                  <p className="first-sentence">With an outstanding style, only for you</p>
+                  <p className="second-sentence"> Exclusively designed for you</p>
+              </div>
+              <div className="hero-media">
+                  <div className='hero-contain'>
+                      <img src="/hero-women.png" alt="standing women"/>
+                      <button className="for-her">For Her</button>
+                  </div>
+                  <div className='hero-contain'>
+                      <img src="/hero-men.png" alt="standing women"/>
+                      <button className="for-men">For Him</button>
+                  </div>
+              </div>
+          </section>
 
+          <section className={"best-deals"}>
+              <div>
+                  <div>
+                      <p className={'best-deal-text'}> Best Deals</p>
+                  </div>
+                  <div className={"best-deal-slider"}>
+                     <Slider {...settings}>
+                      <div className={"slider-div"}>
+                          <div className={"img-div"}>
+                              <img src={"shoe.png"} alt={"shoe image"}/>
+                          </div>
+                          <div className={'price-name-div'}>
+                              <p className={'slider-text'}>Flat Hill Slingback</p>
+                              <p><del className={'slider-deleted-price'}>$299</del><span className={"slider-price"}>$163</span></p>
+                          </div>
+                      </div>
+                      <div className={'slider-div'}>
+                          <div className={"img-div"}>
+                                <img src={"circle.png"} alt={"shoe image"}/>
+                          </div>
+                          <div className={'price-name-div'}>
+                              <p className={'slider-text'}>Ocean Blue Ring</p>
+                              <p><del className={'slider-deleted-price'}>$269</del><span className={"slider-price"}>$245</span></p>
+                          </div>
+                      </div>
+                      <div className={'slider-div'}>
+                          <div className={"img-div"}>
+                              <img src={"wallet.png"} alt={"shoe image"}/>
+                          </div>
+                          <div className={'price-name-div'}>
+                              <p className={'slider-text'}>Brown Leather Wallet</p>
+                              <p><del className={'slider-deleted-price'}>$179</del><span className={"slider-price"}>$144</span></p>
+                          </div>
+                      </div>
+                      <div className={'slider-div'}>
+                          <div className={"img-div"}>
+                              <img src={"apple-watch.png"} alt={"shoe image"}/>
+                          </div>
+                          <div className={'price-name-div'}>
+                              <p className={'slider-text'}>Silverside Wristwatch</p>
+                              <p><del className={'slider-deleted-price'}>$379</del><span className={"slider-price"}>$336</span></p>
+                          </div>
+                      </div>
+                     </Slider>
+                  </div>
+                  <div className={'view-all-button'}>
+                      <button>View All</button>
+                  </div>
+              </div>
+          </section>
       </main>
 
       <footer >
