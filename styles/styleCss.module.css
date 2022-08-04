@@ -1,0 +1,296 @@
+.heroImg {
+    background-image: url("../public/background-image.png");
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+.leftMenu a {
+    text-decoration: none;
+}
+
+.listStyle {
+    list-style-type: none;
+}
+
+.listStyle li {
+    margin-left: 16px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.leftNav {
+    display: flex;
+    margin-left: 173px;
+    align-items: center;
+}
+
+.leftMenu {
+    display: flex;
+    gap: 32px;
+}
+
+.leftMenu li a {
+    color: black;
+}
+
+.rightIcons {
+    margin-right: 162px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+
+.logoName {
+    margin-top: 6px;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.heroContent {
+    text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    margin-top: 84px;
+}
+
+.firstSentence {
+    font-weight: 400;
+    font-size: 30px;
+    margin: auto;
+}
+
+.secondSentence {
+    font-weight: 700;
+    font-size: 80px;
+    margin: auto;
+    font-family: 'Jost';
+}
+
+.heroMedia {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 54px;
+}
+
+.heroContain button {
+    position: absolute;
+    padding: 18px 60px 14px;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-weight: bold;
+}
+.heroContain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bestDeals {
+    margin-top: 99px;
+}
+
+.bestDealText {
+    text-align: center;
+    font-weight: bold;
+    font-family: "jost";
+    font-size: 39px;
+}
+
+.bestDealSlider {
+    width: 80%;
+    margin: auto;
+}
+
+.imgDiv {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 0px 52px 0px;*/
+}
+
+.viewAllButton {
+    text-align: center;
+    margin-top: 56px;
+}
+
+.best-deals {
+    font-family: "Jost";
+}
+
+.viewAllButton button{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 18px 70px 14px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Jost';
+}
+
+.sliderText {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sliderDeletedPrice {
+    color: #9E9E9E;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.sliderPrice {
+    color: #FF705C;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.priceNameDiv {
+    text-align: center;
+}
+
+.exclusiveSection {
+    margin-top: 100px;
+    font-family: 'Jost';
+}
+
+.exclusiveItems {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exclusiveFirstItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.exclusiveFirstItemDiv {
+    width: 786px;
+    height: 782px;
+    background-color: #EEEEEE;;
+}
+
+.exclusiveFirstItemDiv button{
+    border: none;
+    align-items: center;
+    padding: 18px 60px 14px;
+    background-color: #212121;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.exclusiveFirstItemContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exclusiveText {
+    font-weight: bold;
+    color: #616161;
+    font-size: 39px;
+    text-align: left;
+}
+
+.exclusiveHeading {
+    font-weight: bold;
+    font-size: 61px;
+    color: #212121;
+}
+
+.exclusiveParagraph {
+    word-wrap: break-word;
+    width: 400px;
+}
+
+.outfitImage {
+    object-fit: cover;
+    width: 786px;
+    height: 782px;
+}
+
+.outfit {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.outfitView {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.8) 0%, rgba(33, 33, 33, 0) 100%);
+
+}
+
+.outfit a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.exclusiveSecondItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.exclusiveDifferentItems {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.itemName {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.7) 0%, rgba(33, 33, 33, 0) 100%);
+    width: 100%;
+    height: 50%;
+}
+
+.itemName a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+

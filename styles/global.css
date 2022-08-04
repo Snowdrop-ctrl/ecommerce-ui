@@ -1,185 +1,275 @@
-body{
+/*body{*/
 
-}
+/*}*/
 
-.hero-img {
-    background-image: url("../public/background-image.png");
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    opacity: 0.2;
-}
+/*.hero-img {*/
+/*    background-image: url("../public/background-image.png");*/
+/*    width: 100%;*/
+/*    height: 80%;*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    opacity: 0.2;*/
+/*}*/
 
-a {
-    text-decoration: none;
-}
+/*a {*/
+/*    text-decoration: none;*/
+/*}*/
 
-ul {
-    list-style-type: none;
-}
+/*ul {*/
+/*    list-style-type: none;*/
+/*}*/
 
-li {
-    margin-left: 16px;
-}
+/*li {*/
+/*    margin-left: 16px;*/
+/*}*/
 
-.logo {
-    display: flex;
-    gap: 10px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Josefin Sans';
-    font-weight: bold;
-    margin-top: 16px;
-}
-
-.left-nav {
-    display: flex;
-    margin-left: 173px;
-    align-items: center;
-}
-
-.left-menu {
-    display: flex;
-    gap: 32px;
-}
-
-.left-menu li a {
-    color: black;
-}
-
-.right-icons {
-    margin-right: 162px;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-
-.logo-name {
-    margin-top: 6px;
-    color: black;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.hero-content {
-    text-align: center;
-    font-family: 'Jost';
-    font-style: normal;
-    margin-top: 84px;
-}
-
-.first-sentence {
-    font-weight: 400;
-    font-size: 30px;
-    margin: auto;
-}
-
-.second-sentence {
-    font-weight: 700;
-    font-size: 80px;
-    margin: auto;
-    font-family: 'Jost';
-}
-
-.hero-media {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    margin-top: 54px;
-}
-
-.hero-media  img {
-    opacity: 1;
-}
-
-.hero-contain button {
-    position: absolute;
-    padding: 18px 60px 14px;
-    font-weight: bold;
-    font-size: 20px;
-    align-items: center;
-    font-family: "Josefin Sans";
-    font-size: 20px;
-    font-weight: bold;
-}
-.hero-contain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.best-deals {
-    margin-top: 99px;
-}
-
-.best-deal-text {
-    text-align: center;
-    font-weight: bold;
-    font-family: "jost";
-    font-size: 39px;
-}
-
-/*.best-deal-slider {*/
-/*    margin-top: 56px;*/
+/*.logo {*/
 /*    display: flex;*/
 /*    gap: 10px;*/
-/*    justify-content: center;*/
+/*}*/
+
+/*header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    font-family: 'Josefin Sans';*/
+/*    font-weight: bold;*/
+/*    margin-top: 16px;*/
+/*}*/
+
+/*.left-nav {*/
+/*    display: flex;*/
+/*    margin-left: 173px;*/
 /*    align-items: center;*/
 /*}*/
 
-.img-div {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*padding: 0px 52px 0px;*/
-}
+/*.left-menu {*/
+/*    display: flex;*/
+/*    gap: 32px;*/
+/*}*/
 
-.view-all-button {
-    text-align: center;
-    margin-top: 56px;
-}
+/*.left-menu li a {*/
+/*    color: black;*/
+/*}*/
 
-.best-deals {
-    font-family: "Jost";
-}
+/*.right-icons {*/
+/*    margin-right: 162px;*/
+/*    display: flex;*/
+/*    gap: 16px;*/
+/*    align-items: center;*/
+/*}*/
 
-.view-all-button button{
-    border: none;
-    color: white;
-    background-color: black;
-    padding: 18px 70px 14px;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Jost';
-}
 
-.slider-text {
-    font-weight: bold;
-    font-size: 25px;
-}
+/*.logo-name {*/
+/*    margin-top: 6px;*/
+/*    color: black;*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*}*/
 
-.slider-deleted-price {
-    color: #9E9E9E;
-    font-weight: 400;
-    font-size: 20px;
-    margin-right: 5px;
-}
+/*.hero-content {*/
+/*    text-align: center;*/
+/*    font-family: 'Jost';*/
+/*    font-style: normal;*/
+/*    margin-top: 84px;*/
+/*}*/
 
-.slider-price {
-    color: #FF705C;
-    font-weight: bold;
-    font-size: 20px;
-}
+/*.first-sentence {*/
+/*    font-weight: 400;*/
+/*    font-size: 30px;*/
+/*    margin: auto;*/
+/*}*/
 
-.price-name-div {
-    text-align: center;
-}
+/*.second-sentence {*/
+/*    font-weight: 700;*/
+/*    font-size: 80px;*/
+/*    margin: auto;*/
+/*    font-family: 'Jost';*/
+/*}*/
+
+/*.hero-media {*/
+/*    display: flex;*/
+/*    position: relative;*/
+/*    justify-content: center;*/
+/*    margin-top: 54px;*/
+/*}*/
+
+/*.hero-media  img {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.hero-contain button {*/
+/*    position: absolute;*/
+/*    padding: 18px 60px 14px;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    align-items: center;*/
+/*    font-family: "Josefin Sans";*/
+/*    font-size: 20px;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.hero-contain {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.best-deals {*/
+/*    margin-top: 99px;*/
+/*}*/
+
+/*.best-deal-text {*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*    font-family: "jost";*/
+/*    font-size: 39px;*/
+/*}*/
+
+/*!*.best-deal-slider {*!*/
+/*!*    margin-top: 56px;*!*/
+/*!*    display: flex;*!*/
+/*!*    gap: 10px;*!*/
+/*!*    justify-content: center;*!*/
+/*!*    align-items: center;*!*/
+/*!*}*!*/
+
+/*.best-deal-slider {*/
+/*    width: 80%;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.img-div {*/
+/*    height: 400px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    !*padding: 0px 52px 0px;*!*/
+/*}*/
+
+/*.view-all-button {*/
+/*    text-align: center;*/
+/*    margin-top: 56px;*/
+/*}*/
+
+/*.best-deals {*/
+/*    font-family: "Jost";*/
+/*}*/
+
+/*.view-all-button button{*/
+/*    border: none;*/
+/*    color: white;*/
+/*    background-color: black;*/
+/*    padding: 18px 70px 14px;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    font-family: 'Jost';*/
+/*}*/
+
+/*.slider-text {*/
+/*    font-weight: bold;*/
+/*    font-size: 25px;*/
+/*}*/
+
+/*.slider-deleted-price {*/
+/*    color: #9E9E9E;*/
+/*    font-weight: 400;*/
+/*    font-size: 20px;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.slider-price {*/
+/*    color: #FF705C;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.price-name-div {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.exclusive-section {*/
+/*    margin-top: 100px;*/
+/*    font-family: 'Jost';*/
+/*}*/
+
+/*.exclusive-items {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.exclusive-first-item {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    gap: 8px;*/
+/*}*/
+
+/*.exclusive-first-item-div {*/
+/*    width: 786px;*/
+/*    height: 782px;*/
+/*    background-color: #EEEEEE;;*/
+/*}*/
+
+/*.exclusive-text {*/
+/*    font-weight: bold;*/
+/*    color: #616161;*/
+/*    font-size: 39px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.exclusive-heading {*/
+/*    font-weight: bold;*/
+/*    font-size: 61px;*/
+/*    color: #212121;*/
+/*}*/
+
+/*.exclusive-paragraph {*/
+/*    word-wrap: break-word;*/
+/*    width: 400px;*/
+/*}*/
+
+/*.exclusive-first-item-div button{*/
+/*    border: none;*/
+/*    align-items: center;*/
+/*    padding: 18px 60px 14px;*/
+/*    background-color: #212121;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*!*.outfit-image {*!*/
+/*!*    width: 786px;*!*/
+/*!*    height: 782px;*!*/
+/*!*}*!*/
+
+/*!*.outfit-image {*!*/
+/*!*    object-fit: cover;*!*/
+/*!*    width: 786px;*!*/
+/*!*    height: 782px;*!*/
+/*!*    position: relative;*!*/
+/*!*    z-index: 1;*!*/
+/*!*}*!*/
+/*.outfit-image img {*/
+/*    position: relative;*/
+/*    object-fit: cover;*/
+/*    width: 786px;*/
+/*    height: 782px;*/
+/*}*/
+
+/*.outfit-view {*/
+/*    position: absolute;*/
+/*}*/
+
+/*.exclusive-first-item-content {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*!*.outfit-image img::after{*!*/
+/*!*    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0));*!*/
+/*!*    width: 786px;*!*/
+/*!*    height: 782px;*!*/
+/*!*}*!*/

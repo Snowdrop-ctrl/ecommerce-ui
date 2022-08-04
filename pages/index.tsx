@@ -3,15 +3,18 @@ import Head from 'next/head'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import indexStyle from '../styles/styleCss.module.css'
 
 const Home: NextPage = () => {
 
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: true,
+        swipeToSlide: true,
+        swipe: true
     };
 
   return (
@@ -40,24 +43,24 @@ const Home: NextPage = () => {
           />
       </Head>
 
-        <div className="hero-img">
+        <div className={indexStyle.heroImg}>
             {/*<img src={"/background-image.png"} alt=''/>*/}
         </div>
 
-        <div className="wrapper">
-            <header>
-                <div className="left-nav">
-                    <div className="logo">
+        <div>
+            <header className={indexStyle.header}>
+                <div className={indexStyle.leftNav}>
+                    <div className={indexStyle.logo}>
                         <a  href="#">
                             <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23.856 22.656L19.76 22.656L17.168 15.136L14.544 22.656L10.48 22.656L14.384 12.32L11.504 5.088L5.072 22.72L0.272 22.72L9.36 -2.1541e-06L13.168 -1.82119e-06L17.168 9.536L21.136 -1.12461e-06L24.944 -7.91701e-07L34 22.72L29.264 22.72L22.8 5.088L19.984 12.32L23.856 22.656Z" fill="#212121"/>
                             </svg>
                         </a>
-                        <span className="logo-name">Majestic</span>
+                        <span className={indexStyle.logoName}>Majestic</span>
                     </div>
 
-                    <nav className="menu">
-                        <ul className="left-menu">
+                    <nav>
+                        <ul className={`${indexStyle.leftMenu} ${indexStyle.listStyle}`}>
                             <li><a href="#">Women</a></li>
                             <li><a href="#">Men</a></li>
                             <li><a href="#">Collection</a></li>
@@ -67,7 +70,7 @@ const Home: NextPage = () => {
                 </div>
 
 
-                <div className="right-icons">
+                <div className={indexStyle.rightIcons}>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.3333 13.0999V15.5999C17.3343 15.832 17.2867 16.0617 17.1937 16.2744C17.1008 16.487 16.9644 16.6779 16.7934 16.8348C16.6224 16.9917 16.4205 17.1112 16.2006 17.1855C15.9808 17.2599 15.7478 17.2875 15.5167 17.2666C12.9523 16.988 10.4892 16.1117 8.32498 14.7083C6.31151 13.4288 4.60443 11.7217 3.32499 9.70825C1.91663 7.53426 1.04019 5.05908 0.766652 2.48325C0.745827 2.25281 0.773214 2.02055 0.847069 1.80127C0.920923 1.58199 1.03963 1.38049 1.19562 1.2096C1.35162 1.03871 1.54149 0.902176 1.75314 0.808686C1.9648 0.715197 2.1936 0.666803 2.42499 0.666585H4.92498C5.32941 0.662604 5.72148 0.805817 6.02812 1.06953C6.33476 1.33324 6.53505 1.69946 6.59165 2.09992C6.69717 2.89997 6.89286 3.68552 7.17499 4.44158C7.2871 4.73985 7.31137 5.06401 7.24491 5.37565C7.17844 5.68729 7.02404 5.97334 6.79998 6.19992L5.74165 7.25825C6.92795 9.34454 8.65536 11.072 10.7417 12.2583L11.8 11.1999C12.0266 10.9759 12.3126 10.8215 12.6243 10.755C12.9359 10.6885 13.26 10.7128 13.5583 10.8249C14.3144 11.107 15.0999 11.3027 15.9 11.4083C16.3048 11.4654 16.6745 11.6693 16.9388 11.9812C17.203 12.2931 17.3435 12.6912 17.3333 13.0999Z" stroke="#212121" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -92,70 +95,130 @@ const Home: NextPage = () => {
         </div>
 
       <main>
-          <section className="hero">
-              <div className='hero-content'>
-                  <p className="first-sentence">With an outstanding style, only for you</p>
-                  <p className="second-sentence"> Exclusively designed for you</p>
+          {/*Hero content*/}
+          <section>
+              <div className={indexStyle.heroContent}>
+                  <p className={indexStyle.firstSentence}>With an outstanding style, only for you</p>
+                  <p className={indexStyle.secondSentence}> Exclusively designed for you</p>
               </div>
-              <div className="hero-media">
-                  <div className='hero-contain'>
+              <div className={indexStyle.heroMedia}>
+                  <div className={indexStyle.heroContain}>
                       <img src="/hero-women.png" alt="standing women"/>
-                      <button className="for-her">For Her</button>
+                      <button>For Her</button>
                   </div>
-                  <div className='hero-contain'>
+                  <div className={indexStyle.heroContain}>
                       <img src="/hero-men.png" alt="standing women"/>
-                      <button className="for-men">For Him</button>
+                      <button>For Him</button>
                   </div>
               </div>
           </section>
 
-          <section className={"best-deals"}>
+          <section className={indexStyle.bestDeals}>
               <div>
                   <div>
-                      <p className={'best-deal-text'}> Best Deals</p>
+                      <p className={indexStyle.bestDealText}> Best Deals</p>
                   </div>
-                  <div className={"best-deal-slider"}>
+                  <div className={indexStyle.bestDealSlider}>
                      <Slider {...settings}>
                       <div className={"slider-div"}>
-                          <div className={"img-div"}>
+                          <div className={indexStyle.imgDiv}>
                               <img src={"shoe.png"} alt={"shoe image"}/>
                           </div>
-                          <div className={'price-name-div'}>
-                              <p className={'slider-text'}>Flat Hill Slingback</p>
-                              <p><del className={'slider-deleted-price'}>$299</del><span className={"slider-price"}>$163</span></p>
+                          <div className={indexStyle.priceNameDiv}>
+                              <p className={indexStyle.sliderText}>Flat Hill Slingback</p>
+                              <p><del className={indexStyle.sliderDeletedPrice}>$299</del><span className={indexStyle.sliderPrice}>$163</span></p>
                           </div>
                       </div>
                       <div className={'slider-div'}>
-                          <div className={"img-div"}>
+                          <div className={indexStyle.imgDiv}>
                                 <img src={"circle.png"} alt={"shoe image"}/>
                           </div>
-                          <div className={'price-name-div'}>
-                              <p className={'slider-text'}>Ocean Blue Ring</p>
-                              <p><del className={'slider-deleted-price'}>$269</del><span className={"slider-price"}>$245</span></p>
+                          <div className={indexStyle.priceNameDiv}>
+                              <p className={indexStyle.sliderText}>Ocean Blue Ring</p>
+                              <p><del className={indexStyle.sliderDeletedPrice}>$269</del><span className={indexStyle.sliderPrice}>$245</span></p>
                           </div>
                       </div>
                       <div className={'slider-div'}>
-                          <div className={"img-div"}>
+                          <div className={indexStyle.imgDiv}>
                               <img src={"wallet.png"} alt={"shoe image"}/>
                           </div>
-                          <div className={'price-name-div'}>
-                              <p className={'slider-text'}>Brown Leather Wallet</p>
-                              <p><del className={'slider-deleted-price'}>$179</del><span className={"slider-price"}>$144</span></p>
+                          <div className={indexStyle.priceNameDiv}>
+                              <p className={indexStyle.sliderText}>Brown Leather Wallet</p>
+                              <p><del className={indexStyle.sliderDeletedPrice}>$179</del><span className={indexStyle.sliderPrice}>$144</span></p>
                           </div>
                       </div>
                       <div className={'slider-div'}>
-                          <div className={"img-div"}>
+                          <div className={indexStyle.imgDiv}>
                               <img src={"apple-watch.png"} alt={"shoe image"}/>
                           </div>
-                          <div className={'price-name-div'}>
-                              <p className={'slider-text'}>Silverside Wristwatch</p>
-                              <p><del className={'slider-deleted-price'}>$379</del><span className={"slider-price"}>$336</span></p>
+                          <div className={indexStyle.priceNameDiv}>
+                              <p className={indexStyle.sliderText}>Silverside Wristwatch</p>
+                              <p><del className={indexStyle.sliderDeletedPrice}>$379</del><span className={indexStyle.sliderPrice}>$336</span></p>
                           </div>
                       </div>
+                         <div className={'slider-div'}>
+                             <div className={indexStyle.imgDiv}>
+                                 <img src={"apple-watch.png"} alt={"shoe image"}/>
+                             </div>
+                             <div className={indexStyle.priceNameDiv}>
+                                 <p className={indexStyle.sliderText}>Silverside Wristwatch</p>
+                                 <p><del className={indexStyle.sliderDeletedPrice}>$379</del><span className={indexStyle.sliderPrice}>$336</span></p>
+                             </div>
+                         </div>
                      </Slider>
                   </div>
-                  <div className={'view-all-button'}>
+                  <div className={indexStyle.viewAllButton}>
                       <button>View All</button>
+                  </div>
+              </div>
+          </section>
+
+          {/*Exclusive collection */}
+          <section className={indexStyle.exclusiveSection}>
+              <div className={indexStyle.exclusiveItems}>
+                  <div className={indexStyle.exclusiveFirstItem}>
+                      <div className={`${indexStyle.exclusiveFirstItemDiv} ${indexStyle.exclusiveFirstItemContent}`}>
+                          <div>
+                              <p className={indexStyle.exclusiveText}>Exclusive collection 2021</p>
+                              <h1 className={indexStyle.exclusiveHeading}>Be exclusive</h1>
+                              <p className={indexStyle.exclusiveParagraph}>
+                                  The best everyday option in a Super Saver range within a
+                                  reasonable price. It is our responsibility to keep you
+                                  100 percent stylish. Be smart & trendy with us.
+                              </p>
+                              <button>Explore</button>
+                          </div>
+                      </div>
+                      <div className={indexStyle.exclusiveFirstItemDiv}>
+                          <div className={indexStyle.outfit}>
+                              <img className={indexStyle.outfitImage} src={"./exclusive-collection/outfit.png"} alt={"outfit image"}/>
+                              <div className={indexStyle.outfitView}>
+                                  <a style={{paddingBottom:'73px'}} href={"#"}>Outfit -&gt;</a>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div className={indexStyle.exclusiveSecondItem}>
+                      <div className={indexStyle.exclusiveDifferentItems}>
+                          <img src={"./exclusive-collection/vanity-bag.png"} alt={""}/>
+                        <div className={indexStyle.itemName}>
+                            <a href={"#"}>Vanity Bags -&gt;</a>
+                        </div>
+                      </div>
+                      <div className={indexStyle.exclusiveDifferentItems}>
+                          <img src={"./exclusive-collection/hats.png"} alt={""}/>
+                        <div className={indexStyle.itemName}>
+                            <a href={"#"}>Hats -&gt;</a>
+                        </div>
+                      </div>
+                      <div className={indexStyle.exclusiveDifferentItems}>
+                          <img src={"./exclusive-collection/high-heels.png"} alt={""}/>
+                          <div className={indexStyle.itemName}>
+                              <a href={"#"}>High Heels -&gt;</a>
+                          </div>
+                      </div>
                   </div>
               </div>
           </section>
