@@ -137,7 +137,7 @@
     margin-top: 56px;
 }
 
-.best-deals {
+.bestDeals {
     font-family: "Jost";
 }
 
@@ -261,6 +261,9 @@
     font-weight: bold;
     font-size: 30px;
     padding: 10px;
+    display: flex;
+    gap: 11px ;
+    align-items: center;
 }
 
 .exclusiveSecondItem {
@@ -292,5 +295,116 @@
     color: white;
     font-weight: bold;
     font-size: 20px;
+    display: flex;
+    gap: 11px ;
+    align-items: center;
 }
 
+.checkoutSection {
+    margin-top: 100px;
+}
+
+.checkoutNewArrivalsSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Jost';
+}
+
+.checkoutSliderItems {
+    width: 67%;
+    margin: auto;
+}
+
+.checkoutHeading {
+    font-weight: bold;
+    color: #212121;
+    font-size: 39px;
+}
+
+.checkoutItem {
+    position: relative;
+    display: flex !important;;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.checkoutItemDetails {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 98%;
+    height: 50%;
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.7) 0%, rgba(33, 33, 33, 0) 100%);
+}
+
+.checkoutItemText {
+    margin-left: 23px;
+    text-align: left;
+}
+
+.checkoutItemFirstText {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.checkoutItemSecondText {
+    font-weight: 400;
+    font-size: 20px;
+    color: #E0E0E0;
+}
+
+.checkoutItemPrice {
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFA15C;
+}
+
+.shopByCategoryActions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.shopByCategoryActions button {
+    border: none;
+}
+
+.genderAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+
+.genderAction button {
+    padding: 10px 0px 20px;
+    background: white;
+    border-bottom: 1px solid gray;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Jost';
+}
+
+.categoryAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.categoryAction button {
+    padding: 14px 24px;
+    background: white;
+    border: 1px solid #F5F5F5;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Jost';
+}
