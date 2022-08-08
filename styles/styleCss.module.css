@@ -197,7 +197,7 @@
     background-color: #EEEEEE;;
 }
 
-.exclusiveFirstItemDiv button{
+.ExploreButton{
     border: none;
     align-items: center;
     padding: 18px 60px 14px;
@@ -205,6 +205,7 @@
     color: white;
     font-weight: bold;
     font-size: 20px;
+    margin-top: 40px;
 }
 
 .exclusiveFirstItemContent {
@@ -408,3 +409,100 @@
     font-size: 20px;
     font-family: 'Jost';
 }
+
+.collectionSection {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap:11px;
+    font-family: 'Jost';
+}
+
+.collectionItems {
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.collectionTextDiv {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    height: 25%;
+}
+
+.collectionText {
+   margin-left: 70px;
+    line-height: 8px;
+}
+
+.collectionItem1LinearGradiant {
+    background: linear-gradient(180deg, rgba(33, 33, 33, 0.7) 0%, rgba(33, 33, 33, 0) 100%);
+}
+
+.collectionItem2LinearGradiant {
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.7) 0%, rgba(33, 33, 33, 0) 100%);
+}
+
+.summerSection {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'Jost';
+}
+
+.summerPoster {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.summerPosterText {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.7) 0%, rgba(33, 33, 33, 0) 100%);
+}
+
+.summerItem {
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.summerItemText {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    background: linear-gradient(180deg, rgba(33, 33, 33, 0.7) 0%, rgba(33, 33, 33, 0) 100%);
+}
+
+.summerItemsText {
+    font-weight: bold;
+    color: white;
+    font-size: 39px;
+    margin-left: 64px;
+}
+
+.GentleFormalExplore {
+    width: 786px;
+    height: 782px;
+}
+
+/*.ExploreButton{*/
+/*    border: none;*/
+/*    align-items: center;*/
+/*    padding: 18px 60px 14px;*/
+/*    background-color: #212121;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*}*/

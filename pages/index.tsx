@@ -193,7 +193,7 @@ const Home: NextPage = () => {
                                   reasonable price. It is our responsibility to keep you
                                   100 percent stylish. Be smart & trendy with us.
                               </p>
-                              <button>Explore</button>
+                              <button className={indexStyle.ExploreButton}>Explore</button>
                           </div>
                       </div>
                       <div className={indexStyle.exclusiveFirstItemDiv}>
@@ -335,7 +335,7 @@ const Home: NextPage = () => {
                   </div>
                   <div className={indexStyle.bestDealSlider}>
                       <Slider {...settings}>
-                          <div className={"slider-div"}>
+                          <div>
                               <div className={indexStyle.imgDiv}>
                                   <img src={"./shoes/shoe-1.png"} alt={"shoe image"}/>
                               </div>
@@ -344,7 +344,7 @@ const Home: NextPage = () => {
                                   <p><del className={indexStyle.sliderDeletedPrice}>$299</del><span className={indexStyle.sliderPrice}>$163</span></p>
                               </div>
                           </div>
-                          <div className={'slider-div'}>
+                          <div>
                               <div className={indexStyle.imgDiv}>
                                   <img src={"./shoes/shoe-2.png"} alt={"shoe image"}/>
                               </div>
@@ -353,7 +353,7 @@ const Home: NextPage = () => {
                                   <p><del className={indexStyle.sliderDeletedPrice}>$269</del><span className={indexStyle.sliderPrice}>$245</span></p>
                               </div>
                           </div>
-                          <div className={'slider-div'}>
+                          <div>
                               <div className={indexStyle.imgDiv}>
                                   <img src={"./shoes/shoe-3.png"} alt={"shoe image"}/>
                               </div>
@@ -362,7 +362,7 @@ const Home: NextPage = () => {
                                   <p><del className={indexStyle.sliderDeletedPrice}>$179</del><span className={indexStyle.sliderPrice}>$144</span></p>
                               </div>
                           </div>
-                          <div className={'slider-div'}>
+                          <div>
                               <div className={indexStyle.imgDiv}>
                                   <img src={"./shoes/shoe-4.png"} alt={"shoe image"}/>
                               </div>
@@ -371,7 +371,7 @@ const Home: NextPage = () => {
                                   <p><del className={indexStyle.sliderDeletedPrice}>$379</del><span className={indexStyle.sliderPrice}>$336</span></p>
                               </div>
                           </div>
-                          <div className={'slider-div'}>
+                          <div>
                               <div className={indexStyle.imgDiv}>
                                   <img src={"./shoes/shoe-3.png"} alt={"shoe image"}/>
                               </div>
@@ -386,6 +386,144 @@ const Home: NextPage = () => {
                       <button>View All</button>
                   </div>
               </div>
+          </section>
+
+          {/*collection*/}
+          <section className={indexStyle.collectionSection}>
+                <div className={indexStyle.collectionItems}>
+                    <img src={'./collection/collection-1.png'}/>
+                    <div className={`${indexStyle.collectionTextDiv} ${indexStyle.collectionItem1LinearGradiant}`}>
+                        <div className={indexStyle.collectionText} style={{marginTop:'116px'}}>
+                            <h1 style={{fontWeight:'bold', color:"white", fontSize:"61px"}}>Urban Stories</h1>
+                            <p style={{fontWeight:'bold', color:"white", fontSize:"25px"}}>Collection</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={indexStyle.collectionItems} style={{alignItems:'flex-end'}}>
+                    <img src={'./collection/collection-2.png'}/>
+                    <div className={`${indexStyle.collectionTextDiv} ${indexStyle.collectionItem2LinearGradiant}`}>
+                        <div className={indexStyle.collectionText}>
+                            <h1 style={{fontWeight:'bold', color:"white", fontSize:"61px"}}>Country Lights</h1>
+                            <p style={{fontWeight:'bold', color:"white", fontSize:"25px"}}>Collection</p>
+                        </div>
+                    </div>
+                </div>
+          </section>
+
+          {/*Best sellers*/}
+          <section className={indexStyle.bestDeals}>
+              <div>
+                  <div>
+                      <p className={indexStyle.bestDealText}> Best Sellers</p>
+                  </div>
+                  <div className={indexStyle.bestDealSlider}>
+                      <Slider {...settings}>
+                          <div>
+                              <div className={indexStyle.imgDiv}>
+                                  <img src={"./best-sellers/Item-1.png"} alt={"best seller image"}/>
+                              </div>
+                              <div className={indexStyle.priceNameDiv}>
+                                  <p className={indexStyle.sliderText}>Marie Claire Handbag</p>
+                                  <p><del className={indexStyle.sliderDeletedPrice}>$399</del><span className={indexStyle.sliderPrice}>$365</span></p>
+                              </div>
+                          </div>
+                          <div>
+                              <div className={indexStyle.imgDiv}>
+                                  <img src={"./best-sellers/Items2.png"} alt={"best seller image"}/>
+                              </div>
+                              <div className={indexStyle.priceNameDiv}>
+                                  <p className={indexStyle.sliderText}>Red Gem Earrings</p>
+                                  <p><del className={indexStyle.sliderDeletedPrice}>$489</del><span className={indexStyle.sliderPrice}>$466</span></p>
+                              </div>
+                          </div>
+                          <div>
+                              <div className={indexStyle.imgDiv}>
+                                  <img src={"./best-sellers/Items3.png"} alt={"best seller image"}/>
+                              </div>
+                              <div className={indexStyle.priceNameDiv}>
+                                  <p className={indexStyle.sliderText}>Black Leathered Wristsatch</p>
+                                  <p><del className={indexStyle.sliderDeletedPrice}>$799</del><span className={indexStyle.sliderPrice}>$745</span></p>
+                              </div>
+                          </div>
+                          <div>
+                              <div className={indexStyle.imgDiv}>
+                                  <img src={"./best-sellers/Items4.png"} alt={"best seller image"}/>
+                              </div>
+                              <div className={indexStyle.priceNameDiv}>
+                                  <p className={indexStyle.sliderText}>Red-White Stripped Tie</p>
+                                  <p><del className={indexStyle.sliderDeletedPrice}>$299</del><span className={indexStyle.sliderPrice}>$243</span></p>
+                              </div>
+                          </div>
+                          <div>
+                              <div className={indexStyle.imgDiv}>
+                                  <img src={"./best-sellers/Items2.png"} alt={"best seller image"}/>
+                              </div>
+                              <div className={indexStyle.priceNameDiv}>
+                                  <p className={indexStyle.sliderText}>Red Gem Earrings</p>
+                                  <p><del className={indexStyle.sliderDeletedPrice}>$489</del><span className={indexStyle.sliderPrice}>$466</span></p>
+                              </div>
+                          </div>
+                      </Slider>
+                  </div>
+              </div>
+          </section>
+
+          {/*summer section*/}
+          <section className={indexStyle.summerSection}>
+              <div className={indexStyle.summerPoster}>
+                  <img src={'./summer-collection/summer-party.png'}/>
+                  <div className={indexStyle.summerPosterText}>
+                      <p className={indexStyle.summerItemsText}>Summer of ‘21</p>
+                  </div>
+              </div>
+              <div>
+                  <div className={indexStyle.summerItem}>
+                      <img src={'./summer-collection/glass.png'}/>
+                      <div className={indexStyle.summerItemText}>
+                          <p className={indexStyle.summerItemsText}>Sunglasses</p>
+                      </div>
+                  </div>
+                  <div className={indexStyle.summerItem}>
+                      <img src={'./summer-collection/cap.png'}/>
+                      <div className={indexStyle.summerItemText}>
+                          <p className={indexStyle.summerItemsText}>Hat</p>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <div className={indexStyle.summerItem}>
+                      <img src={'./summer-collection/slipper.png'}/>
+                      <div className={indexStyle.summerItemText}>
+                          <p className={indexStyle.summerItemsText}>Footwear</p>
+                      </div>
+                  </div>
+                  <div className={indexStyle.summerItem}>
+                      <img src={'./summer-collection/watch.png'}/>
+                      <div className={indexStyle.summerItemText}>
+                          <p className={indexStyle.summerItemsText}>Watches</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          {/*gentle form looks*/}
+          <section className={indexStyle.summerSection} style={{gap:'7px'}}>
+              <div className={`${indexStyle.GentleFormalExplore} ${indexStyle.exclusiveFirstItemContent}`}>
+                  <div>
+                      <h1 className={indexStyle.exclusiveHeading}>Gentle Formal Looks </h1>
+                      <p className={indexStyle.exclusiveParagraph}>
+                          We provide the top formal apparel package to make your job look confident
+                          and comfortable. Stay connect.
+                      </p>
+                      <button className={indexStyle.ExploreButton}>Explore Collection</button>
+                  </div>
+              </div>
+              <img className={indexStyle.outfitImage} src={'./gentle-formal.png'}/>
+          </section>
+
+
+          <section>
+
           </section>
       </main>
 
