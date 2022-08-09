@@ -23,6 +23,22 @@ const Home: NextPage = () => {
         </svg></div>
     };
 
+    const setting2 = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        swipeToSlide: true,
+        swipe: true,
+        nextArrow: <div><svg width="50" height="50" viewBox="0 0 22 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 41L21 21L1 1" stroke="#616161" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg></div>,
+        prevArrow: <div><svg width="50" height="50" viewBox="0 0 22 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 41L1 21L21 1" stroke="#BDBDBD" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg></div>
+    };
+
   return (
     <div>
       <Head>
@@ -522,12 +538,357 @@ const Home: NextPage = () => {
           </section>
 
 
-          <section>
-
+          {/*Post view section*/}
+          <section className={indexStyle.postViewSection}>
+              <div className={indexStyle.postView}>
+                  <div>
+                      <img src={'./user-posts/post1.png'}/>
+                  </div>
+                  <div className={indexStyle.postUserDiv}>
+                      <div className={indexStyle.postUser}>
+                          <div>
+                              <img style={{width: '89px',height: '89px', objectFit:"cover"}} src={'./user-posts/user1.jpg'}/>
+                          </div>
+                          <div className={indexStyle.socialCountDiv}>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g clipPath="url(#clip0_2_402)">
+                                              <path d="M1.5 12.2505C1.5 12.2505 5.5 4.25049 12.5 4.25049C19.5 4.25049 23.5 12.2505 23.5 12.2505C23.5 12.2505 19.5 20.2505 12.5 20.2505C5.5 20.2505 1.5 12.2505 1.5 12.2505Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                              <path d="M12.5 15.25C14.1569 15.25 15.5 13.9069 15.5 12.25C15.5 10.5931 14.1569 9.25 12.5 9.25C10.8431 9.25 9.5 10.5931 9.5 12.25C9.5 13.9069 10.8431 15.25 12.5 15.25Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_2_402">
+                                                  <rect width="24" height="22.5" fill="white" transform="translate(0.5 0.25)"/>
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                  </div>
+                                  <div><p className={indexStyle.postNumberCount}>35</p></div>
+                              </div>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M21.34 5.11012C20.8292 4.59912 20.2228 4.19376 19.5554 3.9172C18.8879 3.64064 18.1725 3.49829 17.45 3.49829C16.7275 3.49829 16.0121 3.64064 15.3446 3.9172C14.6772 4.19376 14.0708 4.59912 13.56 5.11012L12.5 6.17012L11.44 5.11012C10.4083 4.07842 9.00903 3.49883 7.55 3.49883C6.09096 3.49883 4.69169 4.07842 3.66 5.11012C2.6283 6.14181 2.04871 7.54108 2.04871 9.00012C2.04871 10.4592 2.6283 11.8584 3.66 12.8901L4.72 13.9501L12.5 21.7301L20.28 13.9501L21.34 12.8901C21.851 12.3794 22.2564 11.7729 22.5329 11.1055C22.8095 10.438 22.9518 9.7226 22.9518 9.00012C22.9518 8.27763 22.8095 7.56222 22.5329 6.89476C22.2564 6.2273 21.851 5.62087 21.34 5.11012V5.11012Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div>
+                                      <p className={indexStyle.postNumberCount}>23</p>
+                                  </div>
+                              </div>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M15.5 14.5002L20.5 9.50024L15.5 4.50024" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                          <path d="M4.49997 20.5V13.5C4.49997 12.4391 4.9214 11.4217 5.67154 10.6716C6.42169 9.92143 7.4391 9.5 8.49997 9.5H20.5" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div>
+                                      <p className={indexStyle.postNumberCount}>14</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div className={indexStyle.postContent}>
+                              <div>
+                                  <p className={indexStyle.postUserName}>Kelly Hudson  .  <span className={indexStyle.postUserProfession}>Fashion activist</span></p>
+                              </div>
+                              <div>
+                                  <h4 className={indexStyle.postContentHeading}>How important are shoes in your style?</h4>
+                                  <p className={indexStyle.postContentDate}>
+                                      Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters
+                                      for the outsiders that we meet every day...
+                                  </p>
+                              </div>
+                              <div className={indexStyle.postContentReadMore}>
+                                  <div>
+                                      <a href={'#'} style={{fontWeight:'bold', fontSize:'16px', color:'#424242'}}>Read more</a>
+                                  </div>
+                                  <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                      <path d="M11.3334 2.1665L20.6667 11.4998L11.3334 20.8332" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  </svg>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div className={indexStyle.postView}>
+                  <div>
+                      <img src={'./user-posts/post2.png'}/>
+                  </div>
+                  <div className={indexStyle.postUserDiv}>
+                      <div className={indexStyle.postUser}>
+                          <div>
+                              <img style={{width: '89px',height: '89px', objectFit:"cover"}} src={'./user-posts/user2.jpg'}/>
+                          </div>
+                          <div className={indexStyle.socialCountDiv}>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g clipPath="url(#clip0_2_402)">
+                                              <path d="M1.5 12.2505C1.5 12.2505 5.5 4.25049 12.5 4.25049C19.5 4.25049 23.5 12.2505 23.5 12.2505C23.5 12.2505 19.5 20.2505 12.5 20.2505C5.5 20.2505 1.5 12.2505 1.5 12.2505Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                              <path d="M12.5 15.25C14.1569 15.25 15.5 13.9069 15.5 12.25C15.5 10.5931 14.1569 9.25 12.5 9.25C10.8431 9.25 9.5 10.5931 9.5 12.25C9.5 13.9069 10.8431 15.25 12.5 15.25Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_2_402">
+                                                  <rect width="24" height="22.5" fill="white" transform="translate(0.5 0.25)"/>
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                  </div>
+                                  <div><p className={indexStyle.postNumberCount}>35</p></div>
+                              </div>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M21.34 5.11012C20.8292 4.59912 20.2228 4.19376 19.5554 3.9172C18.8879 3.64064 18.1725 3.49829 17.45 3.49829C16.7275 3.49829 16.0121 3.64064 15.3446 3.9172C14.6772 4.19376 14.0708 4.59912 13.56 5.11012L12.5 6.17012L11.44 5.11012C10.4083 4.07842 9.00903 3.49883 7.55 3.49883C6.09096 3.49883 4.69169 4.07842 3.66 5.11012C2.6283 6.14181 2.04871 7.54108 2.04871 9.00012C2.04871 10.4592 2.6283 11.8584 3.66 12.8901L4.72 13.9501L12.5 21.7301L20.28 13.9501L21.34 12.8901C21.851 12.3794 22.2564 11.7729 22.5329 11.1055C22.8095 10.438 22.9518 9.7226 22.9518 9.00012C22.9518 8.27763 22.8095 7.56222 22.5329 6.89476C22.2564 6.2273 21.851 5.62087 21.34 5.11012V5.11012Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div>
+                                      <p className={indexStyle.postNumberCount}>23</p>
+                                  </div>
+                              </div>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M15.5 14.5002L20.5 9.50024L15.5 4.50024" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                          <path d="M4.49997 20.5V13.5C4.49997 12.4391 4.9214 11.4217 5.67154 10.6716C6.42169 9.92143 7.4391 9.5 8.49997 9.5H20.5" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div>
+                                      <p className={indexStyle.postNumberCount}>14</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div className={indexStyle.postContent}>
+                              <div>
+                                  <p className={indexStyle.postUserName}>Kelly Hudson  .  <span className={indexStyle.postUserProfession}>Fashion activist</span></p>
+                              </div>
+                              <div>
+                                  <h4 className={indexStyle.postContentHeading}>How important are shoes in your style?</h4>
+                                  <p className={indexStyle.postContentDate}>
+                                      Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters
+                                      for the outsiders that we meet every day...
+                                  </p>
+                              </div>
+                              <div className={indexStyle.postContentReadMore}>
+                                  <div>
+                                      <a href={'#'} style={{fontWeight:'bold', fontSize:'16px', color:'#424242'}}>Read more</a>
+                                  </div>
+                                  <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                      <path d="M11.3334 2.1665L20.6667 11.4998L11.3334 20.8332" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  </svg>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div className={indexStyle.postView}>
+                  <div>
+                      <img src={'./user-posts/post3.png'}/>
+                  </div>
+                  <div className={indexStyle.postUserDiv}>
+                      <div className={indexStyle.postUser}>
+                          <div>
+                              <img style={{width: '89px',height: '89px', objectFit:"cover"}} src={'./user-posts/user3.jpg'}/>
+                          </div>
+                          <div className={indexStyle.socialCountDiv}>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g clipPath="url(#clip0_2_402)">
+                                              <path d="M1.5 12.2505C1.5 12.2505 5.5 4.25049 12.5 4.25049C19.5 4.25049 23.5 12.2505 23.5 12.2505C23.5 12.2505 19.5 20.2505 12.5 20.2505C5.5 20.2505 1.5 12.2505 1.5 12.2505Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                              <path d="M12.5 15.25C14.1569 15.25 15.5 13.9069 15.5 12.25C15.5 10.5931 14.1569 9.25 12.5 9.25C10.8431 9.25 9.5 10.5931 9.5 12.25C9.5 13.9069 10.8431 15.25 12.5 15.25Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                          </g>
+                                          <defs>
+                                              <clipPath id="clip0_2_402">
+                                                  <rect width="24" height="22.5" fill="white" transform="translate(0.5 0.25)"/>
+                                              </clipPath>
+                                          </defs>
+                                      </svg>
+                                  </div>
+                                  <div><p className={indexStyle.postNumberCount}>35</p></div>
+                              </div>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M21.34 5.11012C20.8292 4.59912 20.2228 4.19376 19.5554 3.9172C18.8879 3.64064 18.1725 3.49829 17.45 3.49829C16.7275 3.49829 16.0121 3.64064 15.3446 3.9172C14.6772 4.19376 14.0708 4.59912 13.56 5.11012L12.5 6.17012L11.44 5.11012C10.4083 4.07842 9.00903 3.49883 7.55 3.49883C6.09096 3.49883 4.69169 4.07842 3.66 5.11012C2.6283 6.14181 2.04871 7.54108 2.04871 9.00012C2.04871 10.4592 2.6283 11.8584 3.66 12.8901L4.72 13.9501L12.5 21.7301L20.28 13.9501L21.34 12.8901C21.851 12.3794 22.2564 11.7729 22.5329 11.1055C22.8095 10.438 22.9518 9.7226 22.9518 9.00012C22.9518 8.27763 22.8095 7.56222 22.5329 6.89476C22.2564 6.2273 21.851 5.62087 21.34 5.11012V5.11012Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div>
+                                      <p className={indexStyle.postNumberCount}>23</p>
+                                  </div>
+                              </div>
+                              <div className={indexStyle.socialCount}>
+                                  <div>
+                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M15.5 14.5002L20.5 9.50024L15.5 4.50024" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                          <path d="M4.49997 20.5V13.5C4.49997 12.4391 4.9214 11.4217 5.67154 10.6716C6.42169 9.92143 7.4391 9.5 8.49997 9.5H20.5" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div>
+                                      <p className={indexStyle.postNumberCount}>14</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div className={indexStyle.postContent}>
+                              <div>
+                                  <p className={indexStyle.postUserName}>Kelly Hudson  .  <span className={indexStyle.postUserProfession}>Fashion activist</span></p>
+                              </div>
+                              <div>
+                                  <h4 className={indexStyle.postContentHeading}>How important are shoes in your style?</h4>
+                                  <p className={indexStyle.postContentDate}>
+                                      Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters
+                                      for the outsiders that we meet every day...
+                                  </p>
+                              </div>
+                              <div className={indexStyle.postContentReadMore}>
+                                  <div>
+                                      <a href={'#'} style={{fontWeight:'bold', fontSize:'16px', color:'#424242'}}>Read more</a>
+                                  </div>
+                                  <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                      <path d="M11.3334 2.1665L20.6667 11.4998L11.3334 20.8332" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  </svg>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </section>
       </main>
 
-      <footer >
+
+        {/*Footer section*/}
+      <footer className={indexStyle.footer} >
+          {/*visit our outlets*/}
+          <div className={indexStyle.visitOutletDiv}>
+              <img style={{width: '100%', height: '100%'}} src="./visitOutlet-bg.png" alt="img"/>
+              <div className={indexStyle.outlet}>
+                  <div className={indexStyle.outletSliderDiv}>
+                      <div>
+                          <p style={{fontWeight:400, fontSize:'39px'}}>Visit out outlets in</p>
+                          <Slider {...setting2}>
+                              <div>
+                                  <p style={{fontWeight:'400', fontSize: '95px'}}>Berlin</p>
+                              </div>
+                          </Slider>
+                      </div>
+                      <div className={indexStyle.outletAddress}>
+                          <div>
+                              <a href={'#'} style={{fontWeight:'bold', fontSize:'20px', lineHeight: '29px', textDecoration: 'none', color: "white"}}>See Address</a>
+                          </div>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M5 12H19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                              <path d="M12 5L19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          {/*footer links*/}
+          <div style={{display:'flex', justifyContent: 'center', alignItems: 'center'}}>
+              <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '80%', height: '100%'}}>
+                  <div className={indexStyle.footerSecondSection}>
+                      <div style={{display:'flex', alignItems: 'flex-start', gap: '112px'}}>
+                          <div>
+                              <h6 className={indexStyle.footerLinkHeading}>Company Info</h6>
+                              <div className={indexStyle.footerLinkText}>
+                                  <a>About Us</a>
+                                  <a>Affliate</a>
+                                  <a>Fashion Blogger</a>
+                              </div>
+                          </div>
+                          <div>
+                              <h6 className={indexStyle.footerLinkHeading}>Help & Support</h6>
+                              <div className={indexStyle.footerLinkText}>
+                                  <a>Shipping info</a>
+                                  <a>Refunds</a>
+                                  <a>How to Order</a>
+                                  <a>How to Track</a>
+                                  <a>Size Guides</a>
+                              </div>
+                          </div>
+                          <div>
+                              <h6 className={indexStyle.footerLinkHeading}>Customer Care</h6>
+                              <div className={indexStyle.footerLinkText}>
+                                  <a>Contact Us</a>
+                                  <a>Payment Methods</a>
+                                  <a>Bonus Point</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div>
+                              <h6>Signup For The Latest News</h6>
+                              <input type={"email"} placeholder={'Enter Email'}/>
+                          </div>
+                          <div>
+                              <div>
+                                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M3.33332 3.8335H16.6667C17.5833 3.8335 18.3333 4.5835 18.3333 5.50016V15.5002C18.3333 16.4168 17.5833 17.1668 16.6667 17.1668H3.33332C2.41666 17.1668 1.66666 16.4168 1.66666 15.5002V5.50016C1.66666 4.5835 2.41666 3.8335 3.33332 3.8335Z" stroke="#212121" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                      <path d="M18.3333 5.5L9.99999 11.3333L1.66666 5.5" stroke="#212121" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  </svg>
+                                  <div><p>something@email.com</p></div>
+                              </div>
+                              <div>
+                                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.3333 14.5999V17.0999C18.3343 17.332 18.2867 17.5617 18.1937 17.7744C18.1008 17.987 17.9644 18.1779 17.7934 18.3348C17.6224 18.4917 17.4205 18.6112 17.2006 18.6855C16.9808 18.7599 16.7478 18.7875 16.5167 18.7666C13.9523 18.488 11.4892 17.6117 9.32498 16.2083C7.31151 14.9288 5.60443 13.2217 4.32499 11.2083C2.91663 9.03426 2.04019 6.55908 1.76665 3.98325C1.74583 3.75281 1.77321 3.52055 1.84707 3.30127C1.92092 3.08199 2.03963 2.88049 2.19562 2.7096C2.35162 2.53871 2.54149 2.40218 2.75314 2.30869C2.9648 2.2152 3.1936 2.1668 3.42499 2.16658H5.92499C6.32941 2.1626 6.72148 2.30582 7.02812 2.56953C7.33476 2.83324 7.53505 3.19946 7.59165 3.59992C7.69717 4.39997 7.89286 5.18552 8.17499 5.94158C8.2871 6.23985 8.31137 6.56401 8.24491 6.87565C8.17844 7.18729 8.02404 7.47334 7.79998 7.69992L6.74165 8.75825C7.92795 10.8445 9.65536 12.572 11.7417 13.7583L12.8 12.6999C13.0266 12.4759 13.3126 12.3215 13.6243 12.255C13.9359 12.1885 14.26 12.2128 14.5583 12.3249C15.3144 12.607 16.0999 12.8027 16.9 12.9083C17.3048 12.9654 17.6745 13.1693 17.9388 13.4812C18.203 13.7931 18.3435 14.1912 18.3333 14.5999Z" stroke="#212121" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  </svg>
+                                  <div><p>+2321354524</p></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  {/*social icons*/}
+                  <div style={{marginTop:'120px', width:'100%'}}>
+                      <div style={{display:'flex', gap:'40px',justifyContent:'center', alignItems:'center'}}>
+                          <a href={'#'}>
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M24 2.6665H20C18.2319 2.6665 16.5362 3.36888 15.286 4.61913C14.0357 5.86937 13.3333 7.56506 13.3333 9.33317V13.3332H9.33334V18.6665H13.3333V29.3332H18.6667V18.6665H22.6667L24 13.3332H18.6667V9.33317C18.6667 8.97955 18.8071 8.64041 19.0572 8.39036C19.3072 8.14031 19.6464 7.99984 20 7.99984H24V2.6665Z" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                          </a>
+                          <a href={'#'}>
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M22.6667 2.6665H9.33333C5.65144 2.6665 2.66667 5.65127 2.66667 9.33317V22.6665C2.66667 26.3484 5.65144 29.3332 9.33333 29.3332H22.6667C26.3486 29.3332 29.3333 26.3484 29.3333 22.6665V9.33317C29.3333 5.65127 26.3486 2.6665 22.6667 2.6665Z" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  <path d="M21.3333 15.1599C21.4979 16.2696 21.3083 17.4029 20.7917 18.3986C20.275 19.3943 19.4575 20.2018 18.4555 20.7061C17.4535 21.2105 16.3179 21.386 15.2104 21.2078C14.1028 21.0296 13.0797 20.5067 12.2865 19.7135C11.4932 18.9202 10.9703 17.8971 10.7921 16.7895C10.6139 15.682 10.7894 14.5464 11.2938 13.5444C11.7981 12.5424 12.6056 11.7249 13.6013 11.2082C14.597 10.6916 15.7303 10.502 16.84 10.6666C17.9719 10.8344 19.0198 11.3619 19.8289 12.171C20.6381 12.9801 21.1655 14.028 21.3333 15.1599Z" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  <path d="M23.3333 8.6665H23.3467" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                          </a>
+                          <a href={'#'}>
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M30.0533 8.56016C29.895 7.92738 29.5724 7.34759 29.1182 6.87937C28.664 6.41115 28.0943 6.07108 27.4667 5.8935C25.1733 5.3335 16 5.3335 16 5.3335C16 5.3335 6.82667 5.3335 4.53333 5.94683C3.90566 6.12441 3.33597 6.46448 2.8818 6.9327C2.42762 7.40093 2.10505 7.98071 1.94667 8.6135C1.52695 10.9409 1.32165 13.3019 1.33333 15.6668C1.31837 18.0496 1.52369 20.4286 1.94667 22.7735C2.12128 23.3866 2.45108 23.9444 2.90419 24.3928C3.35731 24.8412 3.91843 25.1652 4.53333 25.3335C6.82667 25.9468 16 25.9468 16 25.9468C16 25.9468 25.1733 25.9468 27.4667 25.3335C28.0943 25.1559 28.664 24.8158 29.1182 24.3476C29.5724 23.8794 29.895 23.2996 30.0533 22.6668C30.4698 20.3569 30.6751 18.0139 30.6667 15.6668C30.6816 13.2841 30.4763 10.9051 30.0533 8.56016V8.56016Z" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                                  <path d="M13 20.0266L20.6667 15.6666L13 11.3066V20.0266Z" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                          </a>
+                          <a href={'#'}>
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M30.6667 4.00022C29.3899 4.90086 27.9761 5.5897 26.48 6.04022C25.677 5.11691 24.6098 4.46248 23.4227 4.16546C22.2356 3.86844 20.986 3.94315 19.8428 4.3795C18.6996 4.81584 17.7179 5.59276 17.0306 6.60518C16.3434 7.6176 15.9836 8.81667 16 10.0402V11.3736C13.6568 11.4343 11.335 10.9146 9.24135 9.86082C7.14766 8.807 5.34709 7.25174 4 5.33356C4 5.33356 -1.33333 17.3336 10.6667 22.6669C7.92071 24.5308 4.64955 25.4655 1.33334 25.3336C13.3333 32.0002 28 25.3336 28 10.0002C27.9988 9.62883 27.9631 9.25835 27.8933 8.89356C29.2541 7.55155 30.2144 5.85717 30.6667 4.00022V4.00022Z" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div>
+                          <hr/>
+                          <div style={{display:'flex', justifyContent:'space-between'}}>
+                              <div>
+                                  <div><p>All right c Your Company,2022</p></div>
+                              </div>
+                              <div>
+                                  <div><p>Made with propelius Technology </p></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </footer>
     </div>
   )

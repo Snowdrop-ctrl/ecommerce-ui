@@ -497,12 +497,159 @@
     height: 782px;
 }
 
-/*.ExploreButton{*/
-/*    border: none;*/
-/*    align-items: center;*/
-/*    padding: 18px 60px 14px;*/
-/*    background-color: #212121;*/
-/*    color: white;*/
-/*    font-weight: bold;*/
-/*    font-size: 20px;*/
-/*}*/
+.postView {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    flex-direction: column;
+    width: 521px;
+    height: 1009px;
+    position: relative;
+}
+
+.postUserDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+.postUser {
+    display: flex;
+    background: #FCFCFC;
+}
+
+.socialCountDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 34px 0 34px;
+    gap: 32px;
+}
+
+.socialCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.postNumberCount {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.postContentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.postContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.postUserName {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.postUserProfession {
+    font-weight: 400;
+    font-size: 16px;
+    color: #424242;
+}
+
+.postContentHeading {
+    font-weight: bold;
+    font-size: 31px;
+    color: #212121;
+}
+
+.postContentDate {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    color: #424242;
+}
+
+.postContentReadMore {
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.postViewSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 100px;
+}
+
+.footer {
+    font-family: 'Jost';
+    margin-top: 100px;
+}
+
+.visitOutletDiv {
+    position: relative;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.outlet {
+    position: absolute;
+    background: #212121;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.outletSliderDiv {
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.outletAddress {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footerSecondSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footerLinkHeading {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footerLinkText {
+    font-weight: 400;
+    font-size: 16px;
+    color: #616161;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
