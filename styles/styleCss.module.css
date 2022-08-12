@@ -595,6 +595,13 @@
     margin-top: 100px;
 }
 
+.postViewReadMore {
+    font-weight: bold;
+    font-size: 16px;
+    color:#424242;
+    text-decoration: none;
+}
+
 .footer {
     font-family: 'Jost';
     margin-top: 100px;
@@ -603,8 +610,6 @@
 .visitOutletDiv {
     position: relative;
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .outlet {
@@ -646,10 +651,60 @@
 }
 
 .footerLinkText {
-    font-weight: 400;
-    font-size: 16px;
-    color: #616161;
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.footerLinkText a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #616161;
+}
+
+.footerSignupSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 41px;
+}
+
+.footerContactSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContactDiv {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+.footerSocialSection {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.footerEmailInput {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footerEmailInput svg {
+    position: absolute;
+    margin-right: 16px;
+}
+
+.footerSocialMedia {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }

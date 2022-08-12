@@ -603,7 +603,7 @@ const Home: NextPage = () => {
                               </div>
                               <div className={indexStyle.postContentReadMore}>
                                   <div>
-                                      <a href={'#'} style={{fontWeight:'bold', fontSize:'16px', color:'#424242'}}>Read more</a>
+                                      <a href={'#'} className={indexStyle.postViewReadMore}>Read more</a>
                                   </div>
                                   <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
@@ -677,7 +677,7 @@ const Home: NextPage = () => {
                               </div>
                               <div className={indexStyle.postContentReadMore}>
                                   <div>
-                                      <a href={'#'} style={{fontWeight:'bold', fontSize:'16px', color:'#424242'}}>Read more</a>
+                                      <a href={'#'} className={indexStyle.postViewReadMore}>Read more</a>
                                   </div>
                                   <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
@@ -751,7 +751,7 @@ const Home: NextPage = () => {
                               </div>
                               <div className={indexStyle.postContentReadMore}>
                                   <div>
-                                      <a href={'#'} style={{fontWeight:'bold', fontSize:'16px', color:'#424242'}}>Read more</a>
+                                      <a href={'#'} className={indexStyle.postViewReadMore}>Read more</a>
                                   </div>
                                   <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
@@ -797,60 +797,67 @@ const Home: NextPage = () => {
           <div style={{display:'flex', justifyContent: 'center', alignItems: 'center'}}>
               <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '80%', height: '100%'}}>
                   <div className={indexStyle.footerSecondSection}>
-                      <div style={{display:'flex', alignItems: 'flex-start', gap: '112px'}}>
+                      <div style={{display:'flex', gap: '112px'}}>
                           <div>
                               <h6 className={indexStyle.footerLinkHeading}>Company Info</h6>
                               <div className={indexStyle.footerLinkText}>
-                                  <a>About Us</a>
-                                  <a>Affliate</a>
-                                  <a>Fashion Blogger</a>
+                                  <a href={'#'}>About Us</a>
+                                  <a href={'#'}>Affliate</a>
+                                  <a href={'#'}>Fashion Blogger</a>
                               </div>
                           </div>
                           <div>
                               <h6 className={indexStyle.footerLinkHeading}>Help & Support</h6>
                               <div className={indexStyle.footerLinkText}>
-                                  <a>Shipping info</a>
-                                  <a>Refunds</a>
-                                  <a>How to Order</a>
-                                  <a>How to Track</a>
-                                  <a>Size Guides</a>
+                                  <a href={'#'}>Shipping info</a>
+                                  <a href={'#'}>Refunds</a>
+                                  <a href={'#'}>How to Order</a>
+                                  <a href={'#'}>How to Track</a>
+                                  <a href={'#'}>Size Guides</a>
                               </div>
                           </div>
                           <div>
                               <h6 className={indexStyle.footerLinkHeading}>Customer Care</h6>
                               <div className={indexStyle.footerLinkText}>
-                                  <a>Contact Us</a>
-                                  <a>Payment Methods</a>
-                                  <a>Bonus Point</a>
+                                  <a href={'#'}>Contact Us</a>
+                                  <a href={'#'}>Payment Methods</a>
+                                  <a href={'#'}>Bonus Point</a>
                               </div>
                           </div>
                       </div>
-                      <div>
-                          <div>
-                              <h6>Signup For The Latest News</h6>
-                              <input type={"email"} placeholder={'Enter Email'}/>
+                      <div className={indexStyle.footerSignupSection}>
+                          <div style={{display:'flex', flexDirection:'column', gap:'24px'}}>
+                              <label style={{fontWeight:"bold", fontSize:'20px', color:'#212121'}}>Signup For The Latest News</label>
+                              <div className={indexStyle.footerEmailInput}>
+                                  <input style={{padding:'18px 16px', width:"86%"}} type={"email"} placeholder={'Enter Email'}/>
+                                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1 8.5H15" stroke="#424242" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                      <path d="M8 1.5L15 8.5L8 15.5" stroke="#424242" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                  </svg>
+
+                              </div>
                           </div>
-                          <div>
-                              <div>
+                          <div className={indexStyle.footerContactSection}>
+                              <div className={indexStyle.footerContactDiv}>
                                   <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M3.33332 3.8335H16.6667C17.5833 3.8335 18.3333 4.5835 18.3333 5.50016V15.5002C18.3333 16.4168 17.5833 17.1668 16.6667 17.1668H3.33332C2.41666 17.1668 1.66666 16.4168 1.66666 15.5002V5.50016C1.66666 4.5835 2.41666 3.8335 3.33332 3.8335Z" stroke="#212121" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
                                       <path d="M18.3333 5.5L9.99999 11.3333L1.66666 5.5" stroke="#212121" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
                                   </svg>
-                                  <div><p>something@email.com</p></div>
+                                  <div><p style={{fontWeight:400, fontSize:'16px', color:'#616161'}}>something@email.com</p></div>
                               </div>
-                              <div>
+                              <div className={indexStyle.footerContactDiv}>
                                   <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M18.3333 14.5999V17.0999C18.3343 17.332 18.2867 17.5617 18.1937 17.7744C18.1008 17.987 17.9644 18.1779 17.7934 18.3348C17.6224 18.4917 17.4205 18.6112 17.2006 18.6855C16.9808 18.7599 16.7478 18.7875 16.5167 18.7666C13.9523 18.488 11.4892 17.6117 9.32498 16.2083C7.31151 14.9288 5.60443 13.2217 4.32499 11.2083C2.91663 9.03426 2.04019 6.55908 1.76665 3.98325C1.74583 3.75281 1.77321 3.52055 1.84707 3.30127C1.92092 3.08199 2.03963 2.88049 2.19562 2.7096C2.35162 2.53871 2.54149 2.40218 2.75314 2.30869C2.9648 2.2152 3.1936 2.1668 3.42499 2.16658H5.92499C6.32941 2.1626 6.72148 2.30582 7.02812 2.56953C7.33476 2.83324 7.53505 3.19946 7.59165 3.59992C7.69717 4.39997 7.89286 5.18552 8.17499 5.94158C8.2871 6.23985 8.31137 6.56401 8.24491 6.87565C8.17844 7.18729 8.02404 7.47334 7.79998 7.69992L6.74165 8.75825C7.92795 10.8445 9.65536 12.572 11.7417 13.7583L12.8 12.6999C13.0266 12.4759 13.3126 12.3215 13.6243 12.255C13.9359 12.1885 14.26 12.2128 14.5583 12.3249C15.3144 12.607 16.0999 12.8027 16.9 12.9083C17.3048 12.9654 17.6745 13.1693 17.9388 13.4812C18.203 13.7931 18.3435 14.1912 18.3333 14.5999Z" stroke="#212121" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
                                   </svg>
-                                  <div><p>+2321354524</p></div>
+                                  <div><p style={{fontWeight:400, fontSize:'16px', color:'#616161'}}>+2321354524</p></div>
                               </div>
                           </div>
                       </div>
                   </div>
 
                   {/*social icons*/}
-                  <div style={{marginTop:'120px', width:'100%'}}>
-                      <div style={{display:'flex', gap:'40px',justifyContent:'center', alignItems:'center'}}>
+                  <div className={indexStyle.footerSocialSection}>
+                      <div className={indexStyle.footerSocialMedia}>
                           <a href={'#'}>
                               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M24 2.6665H20C18.2319 2.6665 16.5362 3.36888 15.286 4.61913C14.0357 5.86937 13.3333 7.56506 13.3333 9.33317V13.3332H9.33334V18.6665H13.3333V29.3332H18.6667V18.6665H22.6667L24 13.3332H18.6667V9.33317C18.6667 8.97955 18.8071 8.64041 19.0572 8.39036C19.3072 8.14031 19.6464 7.99984 20 7.99984H24V2.6665Z" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
@@ -879,10 +886,10 @@ const Home: NextPage = () => {
                           <hr/>
                           <div style={{display:'flex', justifyContent:'space-between'}}>
                               <div>
-                                  <div><p>All right c Your Company,2022</p></div>
+                                  <div><p>All right &#169; Your Company,2022</p></div>
                               </div>
                               <div>
-                                  <div><p>Made with propelius Technology </p></div>
+                                  <div><p style={{color:'#7E92B3', fontSize:'14px'}}>Made with ❤️ <span style={{color:'#6C7E99', fontSize:'14px', fontWeight:'bold'}}>propelius Technology</span> </p></div>
                               </div>
                           </div>
                       </div>
