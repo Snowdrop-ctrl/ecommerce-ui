@@ -27,6 +27,7 @@
 }
 
 .header {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     font-family: 'Josefin Sans';
@@ -34,9 +35,20 @@
     margin-top: 16px;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navSection {
+    display: flex;
+    justify-content: center;
+}
+
 .leftNav {
     display: flex;
-    margin-left: 173px;
+    /*margin-left: 173px;*/
     align-items: center;
 }
 
@@ -50,7 +62,7 @@
 }
 
 .rightIcons {
-    margin-right: 162px;
+    /*margin-right: 162px;*/
     display: flex;
     gap: 16px;
     align-items: center;
@@ -63,6 +75,56 @@
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+}
+
+.menuModel {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /*background-color: black;*/
+}
+
+/*.menuTest:hover ~ .menuModel {*/
+/*    display: block;*/
+/*}*/
+
+.menuListDiv {
+    margin-top: 83px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftMenuListDiv {
+    display: flex;
+    gap: 316px;
+    width: 100%;
+}
+
+.leftMenuListHeading {
+    color: #1B2437;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.leftMenuSubListDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.leftMenuLists {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #8E8E93;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.leftMenuLists p {
+    cursor: pointer;
 }
 
 .heroContent {
@@ -90,6 +152,8 @@
     position: relative;
     justify-content: center;
     margin-top: 54px;
+    position: relative;
+    z-index: -1;
 }
 
 .heroContain button {
