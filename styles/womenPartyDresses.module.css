@@ -1,5 +1,6 @@
 .womenDressListDiv {
     display: flex;
+    justify-content: end;
     gap: 25px;
     flex-wrap: wrap;
 }

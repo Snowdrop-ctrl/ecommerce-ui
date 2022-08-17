@@ -160,7 +160,7 @@ const WomenPartyDresses = () => {
             <main>
                 <section className={womenDressStyle.womenDressSection}>
                     <div className={womenDressStyle.womenDressSection1}>
-                        <div style={{width: '30%',height: '80%', marginTop:'10px'}}>
+                        <div style={{width: '40%',height: '80%', marginTop:'10px'}}>
                             <h4 className={womenDressStyle.filterHeading}>Filter</h4>
                             <div className={womenDressStyle.filterDiv}>
                                 <div className={womenDressStyle.filterSubDiv}>
@@ -292,7 +292,7 @@ const WomenPartyDresses = () => {
                                 </div>
                             </div>
                         </div>
-                        <div style={{width:'100%'}}>
+                        <div style={{width:'100%', display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
                             <div style={{display:"flex", flexDirection:'column', gap:0, justifyContent: "flex-start", alignItems: "flex-start"}}>
                                 <p className={womenDressStyle.womenPartyHeading}>Women Party Dresses</p>
                                 <p className={womenDressStyle.womenPartyResults}>568 results</p>
@@ -320,6 +320,18 @@ const WomenPartyDresses = () => {
                                         </div>
                                     </div>
                                 )}
+                            </div>
+                            <div style={{display: "flex", justifyContent: "flex-end", alignItems: "flex-end", gap: '13px'}}>
+                                <div style={{ border: '1px solid #D1D5DB', backgroundColor: '#D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}>
+                                    <img src={'./women-party-dresses/leftArrow.png'}/>
+                                </div>
+                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>1</p></div>
+                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>2</p></div>
+                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>...</p></div>
+                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>15</p></div>
+                                <div style={{ border: '1px solid #D1D5DB',backgroundColor: '#1F2937', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}>
+                                    <img src={'./women-party-dresses/rightArrow.png'}/>
+                                </div>
                             </div>
                         </div>
                     </div>
