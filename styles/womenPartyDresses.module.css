@@ -1,0 +1,125 @@
+.womenDressListDiv {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.womenDressDiv {
+    border: 1px solid #E5E7EB;
+    width: 362px;
+    height: 599px;
+}
+
+.dressTextDiv {
+    display: flex;
+    gap: 83px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dressTextPrice {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 7px;
+}
+
+.womenDressSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+.womenDressSection1 {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    width: 90%;
+}
+
+.womenPartyHeading {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0 !important;
+}
+
+.womenPartyResults {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #4B5563;
+    letter-spacing: 0.02em;
+    margin: 0 10px 0;
+}
+
+.filterHeading {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.filterDiv {
+    background: #F9FAFB;
+}
+
+.filterSubDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 36px;
+    padding-bottom: 40px;
+    padding-left: 33px;
+    gap: 40px;
+}
+
+.filterPriceRange {
+    display: flex;
+    flex-direction: column;
+    gap:27px
+}
+
+.filterFilters {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.checkBoxGender{
+    display: flex;
+    gap: 40px;
+}
+
+.checkBoxInput {
+    Width:22px;
+    Height:22px;
+}
+
+.inputLabel {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1F2937;
+}
+
+.nestedFilters h6 {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1F2937;
+}
