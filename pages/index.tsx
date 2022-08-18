@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import indexStyle from '../styles/styleCss.module.css'
+import Router from "next/router";
 
 const Home: NextPage = () => {
 
@@ -41,18 +42,26 @@ const Home: NextPage = () => {
 
     const showMenu = () => {
         const menuEle = document.getElementById("menuModel");
+        // @ts-ignore
         menuEle.style.display = 'block'
 
         const navEle = document.getElementById("navSection");
+        // @ts-ignore
         navEle.style.background = 'white'
     }
 
     const hideMenu = () => {
         const menuEle = document.getElementById("menuModel");
+        // @ts-ignore
         menuEle.style.display = 'none'
 
         const navEle = document.getElementById("navSection");
+        // @ts-ignore
         navEle.style.background = ''
+    }
+
+    const handleCategoryRedirection = () => {
+        Router.push('/women-party-dresses').then()
     }
 
   return (
@@ -171,7 +180,7 @@ const Home: NextPage = () => {
                                 <p>Accessories</p>
                                 <p>Bags</p>
                                 <p>Coats</p>
-                                <p>Dresses</p>
+                                <p onClick={() => handleCategoryRedirection()}>Dresses</p>
                                 <p>Shoes</p>
                                 <p>Suits</p>
                             </div>

@@ -1,6 +1,5 @@
 .womenDressListDiv {
     display: flex;
-    justify-content: end;
     gap: 25px;
     flex-wrap: wrap;
 }
@@ -93,7 +92,7 @@
 .filterFilters {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 20px;
 }
 
 .checkBoxGender{
@@ -107,12 +106,17 @@
 }
 
 .inputLabel {
-    font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     color: #1F2937;
 }
+
+/*.nestedFilters {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 30px;*/
+/*}*/
 
 .nestedFilters h6 {
     font-family: 'Jost';
@@ -123,4 +127,36 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #1F2937;
+}
+
+.womenPartySection2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -24px;
+}
+
+.womenDressesSubDivSection2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.womenDressesHeadingResult {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.womenDressesPages {
+    border: 1px solid #D1D5DB;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

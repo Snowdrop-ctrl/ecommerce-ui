@@ -1,9 +1,14 @@
+import * as React from 'react'
 import indexStyle from "../styles/styleCss.module.css";
 import womenDressStyle from "../styles/womenPartyDresses.module.css"
+import Box from '@mui/material/Box'
+import Slider from "@mui/material/Slider";
 import Head from "next/head";
+import Router from "next/router";
+
+const minDistance = 100;
 
 const WomenPartyDresses = () => {
-
     const womenPartyDressData = [
         {
             id:1,
@@ -12,6 +17,7 @@ const WomenPartyDresses = () => {
             text2:'active wear',
             priceSymbol:'$',
             price:715,
+            newArrival: true
         },
         {
             id:2,
@@ -44,6 +50,7 @@ const WomenPartyDresses = () => {
             text2:'jacket',
             priceSymbol:'$',
             price:1610,
+            newArrival: true
         },
         {
             id:6,
@@ -78,6 +85,28 @@ const WomenPartyDresses = () => {
             price:540,
         }
     ]
+
+    const [value1, setValue1] = React.useState<number[]>([500, 700]);
+
+    const handleChange1 = (
+        event: Event,
+        newValue: number | number[],
+        activeThumb: number,
+        ) => {
+        if (!Array.isArray(newValue)) {
+            return;
+        }
+
+        if (activeThumb === 0) {
+            setValue1([Math.min(newValue[0], value1[1] - minDistance), value1[1]]);
+        } else {
+            setValue1([value1[0], Math.max(newValue[1], value1[0] + minDistance)]);
+        }
+    };
+
+    const handleToRedirectToHome = () => {
+        Router.push('/').then()
+    }
 
     return (
         <div>
@@ -114,8 +143,8 @@ const WomenPartyDresses = () => {
                     <nav className={indexStyle.nav}>
                         <div className={indexStyle.leftNav}>
                             <div className={indexStyle.logo}>
-                                <a  href="#">
-                                    <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a href={'/'} onClick={() => handleToRedirectToHome()}>
+                                    <svg onClick={() => handleToRedirectToHome()} width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M23.856 22.656L19.76 22.656L17.168 15.136L14.544 22.656L10.48 22.656L14.384 12.32L11.504 5.088L5.072 22.72L0.272 22.72L9.36 -2.1541e-06L13.168 -1.82119e-06L17.168 9.536L21.136 -1.12461e-06L24.944 -7.91701e-07L34 22.72L29.264 22.72L22.8 5.088L19.984 12.32L23.856 22.656Z" fill="#212121"/>
                                     </svg>
                                 </a>
@@ -167,10 +196,36 @@ const WomenPartyDresses = () => {
                                     <div className={womenDressStyle.nestedFilters}>
                                         <h6>PRICES</h6>
                                         <div className={womenDressStyle.filterPriceRange}>
-                                            <label>Range</label>
-                                            <div>
-                                                <input type={'range'} value={'200'} min={'0'} max={'1000'}/>
+                                            <div style={{display:"flex", alignItems: "center", justifyContent: "space-between", fontFamily:'Jost'}}>
+                                                <label className={womenDressStyle.inputLabel} style={{color:'#4B5563'}}>Range</label>
+                                                <p style={{fontWeight:500, fontSize:'20px', color:'#1F2937'}}> ${value1[0]} - ${value1[1]}</p>
                                             </div>
+                                            <Box sx={{ width: 400 }}>
+                                                <Slider
+                                                    sx={{
+                                                        "&.MuiSlider-root": {
+                                                            color: "#EB5757",
+                                                        },
+                                                        "& .MuiSlider-rail": {
+                                                            background: '#111827',
+                                                            opacity: '0.1'
+                                                        },
+                                                        "& .MuiSlider-thumb": {
+                                                            border: '3px solid white',
+                                                            "&:hover": {
+                                                                boxShadow: "none",
+                                                            },
+                                                            "& .Mui-focusVisible": {
+                                                                boxShadow: "none"
+                                                            }
+                                                        },
+                                                    }}
+                                                    value={value1}
+                                                    min={0}
+                                                    max={1000}
+                                                    onChange={handleChange1}
+                                                />
+                                            </Box>
                                         </div>
                                     </div>
                                     <div className={womenDressStyle.nestedFilters}>
@@ -195,7 +250,9 @@ const WomenPartyDresses = () => {
                                         </div>
                                     </div>
                                     <div className={womenDressStyle.nestedFilters}>
-                                        <h6>brands</h6>
+                                        <div>
+                                            <h6>brands</h6>
+                                        </div>
                                         <div className={womenDressStyle.filterFilters}>
                                             <div className={womenDressStyle.checkBoxGender}>
                                                 <input className={womenDressStyle.checkBoxInput} type={'checkbox'}/>
@@ -241,6 +298,9 @@ const WomenPartyDresses = () => {
                                                 <input className={womenDressStyle.checkBoxInput} type={'checkbox'}/>
                                                 <label className={womenDressStyle.inputLabel}>Zara</label>
                                             </div>
+                                            <div>
+                                                <button className={womenDressStyle.inputLabel} style={{background: "none", border: 'none', cursor: 'pointer'}} name={'10more'}>+10 more</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className={womenDressStyle.nestedFilters}>
@@ -265,6 +325,9 @@ const WomenPartyDresses = () => {
                                             <div className={womenDressStyle.checkBoxGender}>
                                                 <input className={womenDressStyle.checkBoxInput} type={'checkbox'}/>
                                                 <label className={womenDressStyle.inputLabel}>Vintage</label>
+                                            </div>
+                                            <div>
+                                                <button className={womenDressStyle.inputLabel} style={{background: "none", border: 'none', cursor: 'pointer'}} name={'10more'}>+4 more</button>
                                             </div>
                                         </div>
                                     </div>
@@ -292,44 +355,51 @@ const WomenPartyDresses = () => {
                                 </div>
                             </div>
                         </div>
-                        <div style={{width:'100%', display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-                            <div style={{display:"flex", flexDirection:'column', gap:0, justifyContent: "flex-start", alignItems: "flex-start"}}>
-                                <p className={womenDressStyle.womenPartyHeading}>Women Party Dresses</p>
-                                <p className={womenDressStyle.womenPartyResults}>568 results</p>
-                            </div>
+                        <div className={womenDressStyle.womenPartySection2}>
+                            <div className={womenDressStyle.womenDressesSubDivSection2}>
+                                <div className={womenDressStyle.womenDressesHeadingResult}>
+                                    <p className={womenDressStyle.womenPartyHeading}>Women Party Dresses</p>
+                                    <p className={womenDressStyle.womenPartyResults}>568 results</p>
+                                </div>
 
-                            {/*women dresses section*/}
-                            <div className={womenDressStyle.womenDressListDiv}>
-                                {womenPartyDressData.map((item) =>
-                                    <div key={item.id} style={{position:'relative', display: 'flex', justifyContent: 'flex-end', }}>
-                                        <div key={item.id} className={womenDressStyle.womenDressDiv}>
-                                            <img src={item.img}/>
-                                            <div className={womenDressStyle.dressTextDiv}>
-                                                <div className={womenDressStyle.dressTextPrice}>
-                                                    <p>{item.text1}</p>
-                                                    <p>{item.text2}</p>
-                                                    <p style={{marginTop:'56px', fontSize:'26px'}}>{item.priceSymbol} <span>{item.price}</span></p>
+                                {/*women dresses section*/}
+                                <div className={womenDressStyle.womenDressListDiv}>
+                                    {womenPartyDressData.map((item) =>
+                                        <div key={item.id} style={{position:'relative', display: 'flex' }}>
+                                            <div key={item.id} className={womenDressStyle.womenDressDiv}>
+                                                <img src={item.img}/>
+                                                <div className={womenDressStyle.dressTextDiv}>
+                                                    <div className={womenDressStyle.dressTextPrice}>
+                                                        <p>{item.text1}</p>
+                                                        <p>{item.text2}</p>
+                                                        <p style={{marginTop:'56px', fontSize:'26px'}}>{item.priceSymbol} <span>{item.price}</span></p>
+                                                    </div>
+                                                    <div>
+                                                        <img src={'./women-party-dresses/cart.png'}/>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <img src={'./women-party-dresses/cart.png'}/>
+                                            </div>
+                                            <div style={{  position: "absolute" , display: "flex", justifyContent: "space-between", width: '100%'}}>
+                                                {item.newArrival ? <div style={{background: 'black', color: "white", width:'116px', height:'26px', textAlign: 'center'}}>
+                                                    <p style={{margin: '5px 24px', fontSize: '12px', fontWeight: 400, fontFamily: 'Jost'}}>New Arrivals</p>
+                                                </div>: <div></div>}
+                                                <div style={{background: 'rgba(0, 0, 0, 0.3)',padding: '18px', margin: '18px',}}>
+                                                    <img src={'./women-party-dresses/dressLike.png'}/>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style={{background: 'rgba(0, 0, 0, 0.3)', position: "absolute",padding: '18px', margin: '18px'}}>
-                                            <img src={'./women-party-dresses/dressLike.png'}/>
-                                        </div>
-                                    </div>
-                                )}
+                                    )}
+                                </div>
                             </div>
                             <div style={{display: "flex", justifyContent: "flex-end", alignItems: "flex-end", gap: '13px'}}>
                                 <div style={{ border: '1px solid #D1D5DB', backgroundColor: '#D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}>
                                     <img src={'./women-party-dresses/leftArrow.png'}/>
                                 </div>
-                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>1</p></div>
-                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>2</p></div>
-                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>...</p></div>
-                                <div style={{border: '1px solid #D1D5DB', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}><p>15</p></div>
-                                <div style={{ border: '1px solid #D1D5DB',backgroundColor: '#1F2937', width:'39px', height:'39px', display: "flex", alignItems: 'center', justifyContent: 'center'}}>
+                                <div className={womenDressStyle.womenDressesPages}><p>1</p></div>
+                                <div className={womenDressStyle.womenDressesPages}><p>2</p></div>
+                                <div className={womenDressStyle.womenDressesPages}><p>...</p></div>
+                                <div className={womenDressStyle.womenDressesPages}><p>15</p></div>
+                                <div style={{ backgroundColor: '#1F2937'}} className={womenDressStyle.womenDressesPages}>
                                     <img src={'./women-party-dresses/rightArrow.png'}/>
                                 </div>
                             </div>
