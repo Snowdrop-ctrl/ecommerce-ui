@@ -629,8 +629,8 @@ const Home: NextPage = () => {
           {/*Post view section*/}
           <section className={indexStyle.postViewSection}>
               <div className={indexStyle.postView}>
-                  <div>
-                      <img src={'./user-posts/post1.png'}/>
+                  <div className={indexStyle.postedImage}>
+                      <img style={{width:'100%'}} src={'./user-posts/post1.png'}/>
                   </div>
                   <div className={indexStyle.postUserDiv}>
                       <div className={indexStyle.postUser}>
@@ -702,154 +702,154 @@ const Home: NextPage = () => {
                       </div>
                   </div>
               </div>
-              <div className={indexStyle.postView}>
-                  <div>
-                      <img src={'./user-posts/post2.png'}/>
-                  </div>
-                  <div className={indexStyle.postUserDiv}>
-                      <div className={indexStyle.postUser}>
-                          <div>
-                              <img style={{width: '89px',height: '89px', objectFit:"cover"}} src={'./user-posts/user2.jpg'}/>
-                          </div>
-                          <div className={indexStyle.socialCountDiv}>
-                              <div className={indexStyle.socialCount}>
-                                  <div>
-                                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <g clipPath="url(#clip0_2_402)">
-                                              <path d="M1.5 12.2505C1.5 12.2505 5.5 4.25049 12.5 4.25049C19.5 4.25049 23.5 12.2505 23.5 12.2505C23.5 12.2505 19.5 20.2505 12.5 20.2505C5.5 20.2505 1.5 12.2505 1.5 12.2505Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                              <path d="M12.5 15.25C14.1569 15.25 15.5 13.9069 15.5 12.25C15.5 10.5931 14.1569 9.25 12.5 9.25C10.8431 9.25 9.5 10.5931 9.5 12.25C9.5 13.9069 10.8431 15.25 12.5 15.25Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                          </g>
-                                          <defs>
-                                              <clipPath id="clip0_2_402">
-                                                  <rect width="24" height="22.5" fill="white" transform="translate(0.5 0.25)"/>
-                                              </clipPath>
-                                          </defs>
-                                      </svg>
-                                  </div>
-                                  <div><p className={indexStyle.postNumberCount}>35</p></div>
-                              </div>
-                              <div className={indexStyle.socialCount}>
-                                  <div>
-                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M21.34 5.11012C20.8292 4.59912 20.2228 4.19376 19.5554 3.9172C18.8879 3.64064 18.1725 3.49829 17.45 3.49829C16.7275 3.49829 16.0121 3.64064 15.3446 3.9172C14.6772 4.19376 14.0708 4.59912 13.56 5.11012L12.5 6.17012L11.44 5.11012C10.4083 4.07842 9.00903 3.49883 7.55 3.49883C6.09096 3.49883 4.69169 4.07842 3.66 5.11012C2.6283 6.14181 2.04871 7.54108 2.04871 9.00012C2.04871 10.4592 2.6283 11.8584 3.66 12.8901L4.72 13.9501L12.5 21.7301L20.28 13.9501L21.34 12.8901C21.851 12.3794 22.2564 11.7729 22.5329 11.1055C22.8095 10.438 22.9518 9.7226 22.9518 9.00012C22.9518 8.27763 22.8095 7.56222 22.5329 6.89476C22.2564 6.2273 21.851 5.62087 21.34 5.11012V5.11012Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                      </svg>
-                                  </div>
-                                  <div>
-                                      <p className={indexStyle.postNumberCount}>23</p>
-                                  </div>
-                              </div>
-                              <div className={indexStyle.socialCount}>
-                                  <div>
-                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M15.5 14.5002L20.5 9.50024L15.5 4.50024" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                          <path d="M4.49997 20.5V13.5C4.49997 12.4391 4.9214 11.4217 5.67154 10.6716C6.42169 9.92143 7.4391 9.5 8.49997 9.5H20.5" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                      </svg>
-                                  </div>
-                                  <div>
-                                      <p className={indexStyle.postNumberCount}>14</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div>
-                          <div className={indexStyle.postContent}>
-                              <div>
-                                  <p className={indexStyle.postUserName}>Kelly Hudson  .  <span className={indexStyle.postUserProfession}>Fashion activist</span></p>
-                              </div>
-                              <div>
-                                  <h4 className={indexStyle.postContentHeading}>How important are shoes in your style?</h4>
-                                  <p className={indexStyle.postContentDate}>
-                                      Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters
-                                      for the outsiders that we meet every day...
-                                  </p>
-                              </div>
-                              <div className={indexStyle.postContentReadMore}>
-                                  <div>
-                                      <a href={'#'} className={indexStyle.postViewReadMore}>Read more</a>
-                                  </div>
-                                  <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                      <path d="M11.3334 2.1665L20.6667 11.4998L11.3334 20.8332" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                  </svg>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div className={indexStyle.postView}>
-                  <div>
-                      <img src={'./user-posts/post3.png'}/>
-                  </div>
-                  <div className={indexStyle.postUserDiv}>
-                      <div className={indexStyle.postUser}>
-                          <div>
-                              <img style={{width: '89px',height: '89px', objectFit:"cover"}} src={'./user-posts/user3.jpg'}/>
-                          </div>
-                          <div className={indexStyle.socialCountDiv}>
-                              <div className={indexStyle.socialCount}>
-                                  <div>
-                                      <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <g clipPath="url(#clip0_2_402)">
-                                              <path d="M1.5 12.2505C1.5 12.2505 5.5 4.25049 12.5 4.25049C19.5 4.25049 23.5 12.2505 23.5 12.2505C23.5 12.2505 19.5 20.2505 12.5 20.2505C5.5 20.2505 1.5 12.2505 1.5 12.2505Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                              <path d="M12.5 15.25C14.1569 15.25 15.5 13.9069 15.5 12.25C15.5 10.5931 14.1569 9.25 12.5 9.25C10.8431 9.25 9.5 10.5931 9.5 12.25C9.5 13.9069 10.8431 15.25 12.5 15.25Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                          </g>
-                                          <defs>
-                                              <clipPath id="clip0_2_402">
-                                                  <rect width="24" height="22.5" fill="white" transform="translate(0.5 0.25)"/>
-                                              </clipPath>
-                                          </defs>
-                                      </svg>
-                                  </div>
-                                  <div><p className={indexStyle.postNumberCount}>35</p></div>
-                              </div>
-                              <div className={indexStyle.socialCount}>
-                                  <div>
-                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M21.34 5.11012C20.8292 4.59912 20.2228 4.19376 19.5554 3.9172C18.8879 3.64064 18.1725 3.49829 17.45 3.49829C16.7275 3.49829 16.0121 3.64064 15.3446 3.9172C14.6772 4.19376 14.0708 4.59912 13.56 5.11012L12.5 6.17012L11.44 5.11012C10.4083 4.07842 9.00903 3.49883 7.55 3.49883C6.09096 3.49883 4.69169 4.07842 3.66 5.11012C2.6283 6.14181 2.04871 7.54108 2.04871 9.00012C2.04871 10.4592 2.6283 11.8584 3.66 12.8901L4.72 13.9501L12.5 21.7301L20.28 13.9501L21.34 12.8901C21.851 12.3794 22.2564 11.7729 22.5329 11.1055C22.8095 10.438 22.9518 9.7226 22.9518 9.00012C22.9518 8.27763 22.8095 7.56222 22.5329 6.89476C22.2564 6.2273 21.851 5.62087 21.34 5.11012V5.11012Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                      </svg>
-                                  </div>
-                                  <div>
-                                      <p className={indexStyle.postNumberCount}>23</p>
-                                  </div>
-                              </div>
-                              <div className={indexStyle.socialCount}>
-                                  <div>
-                                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M15.5 14.5002L20.5 9.50024L15.5 4.50024" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                          <path d="M4.49997 20.5V13.5C4.49997 12.4391 4.9214 11.4217 5.67154 10.6716C6.42169 9.92143 7.4391 9.5 8.49997 9.5H20.5" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-                                      </svg>
-                                  </div>
-                                  <div>
-                                      <p className={indexStyle.postNumberCount}>14</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div>
-                          <div className={indexStyle.postContent}>
-                              <div>
-                                  <p className={indexStyle.postUserName}>Kelly Hudson  .  <span className={indexStyle.postUserProfession}>Fashion activist</span></p>
-                              </div>
-                              <div>
-                                  <h4 className={indexStyle.postContentHeading}>How important are shoes in your style?</h4>
-                                  <p className={indexStyle.postContentDate}>
-                                      Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters
-                                      for the outsiders that we meet every day...
-                                  </p>
-                              </div>
-                              <div className={indexStyle.postContentReadMore}>
-                                  <div>
-                                      <a href={'#'} className={indexStyle.postViewReadMore}>Read more</a>
-                                  </div>
-                                  <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                      <path d="M11.3334 2.1665L20.6667 11.4998L11.3334 20.8332" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                  </svg>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+              {/*<div className={indexStyle.postView}>*/}
+              {/*    <div>*/}
+              {/*        <img src={'./user-posts/post2.png'}/>*/}
+              {/*    </div>*/}
+              {/*    <div className={indexStyle.postUserDiv}>*/}
+              {/*        <div className={indexStyle.postUser}>*/}
+              {/*            <div>*/}
+              {/*                <img style={{width: '89px',height: '89px', objectFit:"cover"}} src={'./user-posts/user2.jpg'}/>*/}
+              {/*            </div>*/}
+              {/*            <div className={indexStyle.socialCountDiv}>*/}
+              {/*                <div className={indexStyle.socialCount}>*/}
+              {/*                    <div>*/}
+              {/*                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                            <g clipPath="url(#clip0_2_402)">*/}
+              {/*                                <path d="M1.5 12.2505C1.5 12.2505 5.5 4.25049 12.5 4.25049C19.5 4.25049 23.5 12.2505 23.5 12.2505C23.5 12.2505 19.5 20.2505 12.5 20.2505C5.5 20.2505 1.5 12.2505 1.5 12.2505Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                                <path d="M12.5 15.25C14.1569 15.25 15.5 13.9069 15.5 12.25C15.5 10.5931 14.1569 9.25 12.5 9.25C10.8431 9.25 9.5 10.5931 9.5 12.25C9.5 13.9069 10.8431 15.25 12.5 15.25Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                            </g>*/}
+              {/*                            <defs>*/}
+              {/*                                <clipPath id="clip0_2_402">*/}
+              {/*                                    <rect width="24" height="22.5" fill="white" transform="translate(0.5 0.25)"/>*/}
+              {/*                                </clipPath>*/}
+              {/*                            </defs>*/}
+              {/*                        </svg>*/}
+              {/*                    </div>*/}
+              {/*                    <div><p className={indexStyle.postNumberCount}>35</p></div>*/}
+              {/*                </div>*/}
+              {/*                <div className={indexStyle.socialCount}>*/}
+              {/*                    <div>*/}
+              {/*                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                            <path d="M21.34 5.11012C20.8292 4.59912 20.2228 4.19376 19.5554 3.9172C18.8879 3.64064 18.1725 3.49829 17.45 3.49829C16.7275 3.49829 16.0121 3.64064 15.3446 3.9172C14.6772 4.19376 14.0708 4.59912 13.56 5.11012L12.5 6.17012L11.44 5.11012C10.4083 4.07842 9.00903 3.49883 7.55 3.49883C6.09096 3.49883 4.69169 4.07842 3.66 5.11012C2.6283 6.14181 2.04871 7.54108 2.04871 9.00012C2.04871 10.4592 2.6283 11.8584 3.66 12.8901L4.72 13.9501L12.5 21.7301L20.28 13.9501L21.34 12.8901C21.851 12.3794 22.2564 11.7729 22.5329 11.1055C22.8095 10.438 22.9518 9.7226 22.9518 9.00012C22.9518 8.27763 22.8095 7.56222 22.5329 6.89476C22.2564 6.2273 21.851 5.62087 21.34 5.11012V5.11012Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                        </svg>*/}
+              {/*                    </div>*/}
+              {/*                    <div>*/}
+              {/*                        <p className={indexStyle.postNumberCount}>23</p>*/}
+              {/*                    </div>*/}
+              {/*                </div>*/}
+              {/*                <div className={indexStyle.socialCount}>*/}
+              {/*                    <div>*/}
+              {/*                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                            <path d="M15.5 14.5002L20.5 9.50024L15.5 4.50024" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                            <path d="M4.49997 20.5V13.5C4.49997 12.4391 4.9214 11.4217 5.67154 10.6716C6.42169 9.92143 7.4391 9.5 8.49997 9.5H20.5" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                        </svg>*/}
+              {/*                    </div>*/}
+              {/*                    <div>*/}
+              {/*                        <p className={indexStyle.postNumberCount}>14</p>*/}
+              {/*                    </div>*/}
+              {/*                </div>*/}
+              {/*            </div>*/}
+              {/*        </div>*/}
+              {/*        <div>*/}
+              {/*            <div className={indexStyle.postContent}>*/}
+              {/*                <div>*/}
+              {/*                    <p className={indexStyle.postUserName}>Kelly Hudson  .  <span className={indexStyle.postUserProfession}>Fashion activist</span></p>*/}
+              {/*                </div>*/}
+              {/*                <div>*/}
+              {/*                    <h4 className={indexStyle.postContentHeading}>How important are shoes in your style?</h4>*/}
+              {/*                    <p className={indexStyle.postContentDate}>*/}
+              {/*                        Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters*/}
+              {/*                        for the outsiders that we meet every day...*/}
+              {/*                    </p>*/}
+              {/*                </div>*/}
+              {/*                <div className={indexStyle.postContentReadMore}>*/}
+              {/*                    <div>*/}
+              {/*                        <a href={'#'} className={indexStyle.postViewReadMore}>Read more</a>*/}
+              {/*                    </div>*/}
+              {/*                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                        <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                        <path d="M11.3334 2.1665L20.6667 11.4998L11.3334 20.8332" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                    </svg>*/}
+              {/*                </div>*/}
+              {/*            </div>*/}
+              {/*        </div>*/}
+              {/*    </div>*/}
+              {/*</div>*/}
+              {/*<div className={indexStyle.postView}>*/}
+              {/*    <div>*/}
+              {/*        <img src={'./user-posts/post3.png'}/>*/}
+              {/*    </div>*/}
+              {/*    <div className={indexStyle.postUserDiv}>*/}
+              {/*        <div className={indexStyle.postUser}>*/}
+              {/*            <div>*/}
+              {/*                <img style={{width: '89px',height: '89px', objectFit:"cover"}} src={'./user-posts/user3.jpg'}/>*/}
+              {/*            </div>*/}
+              {/*            <div className={indexStyle.socialCountDiv}>*/}
+              {/*                <div className={indexStyle.socialCount}>*/}
+              {/*                    <div>*/}
+              {/*                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                            <g clipPath="url(#clip0_2_402)">*/}
+              {/*                                <path d="M1.5 12.2505C1.5 12.2505 5.5 4.25049 12.5 4.25049C19.5 4.25049 23.5 12.2505 23.5 12.2505C23.5 12.2505 19.5 20.2505 12.5 20.2505C5.5 20.2505 1.5 12.2505 1.5 12.2505Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                                <path d="M12.5 15.25C14.1569 15.25 15.5 13.9069 15.5 12.25C15.5 10.5931 14.1569 9.25 12.5 9.25C10.8431 9.25 9.5 10.5931 9.5 12.25C9.5 13.9069 10.8431 15.25 12.5 15.25Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                            </g>*/}
+              {/*                            <defs>*/}
+              {/*                                <clipPath id="clip0_2_402">*/}
+              {/*                                    <rect width="24" height="22.5" fill="white" transform="translate(0.5 0.25)"/>*/}
+              {/*                                </clipPath>*/}
+              {/*                            </defs>*/}
+              {/*                        </svg>*/}
+              {/*                    </div>*/}
+              {/*                    <div><p className={indexStyle.postNumberCount}>35</p></div>*/}
+              {/*                </div>*/}
+              {/*                <div className={indexStyle.socialCount}>*/}
+              {/*                    <div>*/}
+              {/*                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                            <path d="M21.34 5.11012C20.8292 4.59912 20.2228 4.19376 19.5554 3.9172C18.8879 3.64064 18.1725 3.49829 17.45 3.49829C16.7275 3.49829 16.0121 3.64064 15.3446 3.9172C14.6772 4.19376 14.0708 4.59912 13.56 5.11012L12.5 6.17012L11.44 5.11012C10.4083 4.07842 9.00903 3.49883 7.55 3.49883C6.09096 3.49883 4.69169 4.07842 3.66 5.11012C2.6283 6.14181 2.04871 7.54108 2.04871 9.00012C2.04871 10.4592 2.6283 11.8584 3.66 12.8901L4.72 13.9501L12.5 21.7301L20.28 13.9501L21.34 12.8901C21.851 12.3794 22.2564 11.7729 22.5329 11.1055C22.8095 10.438 22.9518 9.7226 22.9518 9.00012C22.9518 8.27763 22.8095 7.56222 22.5329 6.89476C22.2564 6.2273 21.851 5.62087 21.34 5.11012V5.11012Z" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                        </svg>*/}
+              {/*                    </div>*/}
+              {/*                    <div>*/}
+              {/*                        <p className={indexStyle.postNumberCount}>23</p>*/}
+              {/*                    </div>*/}
+              {/*                </div>*/}
+              {/*                <div className={indexStyle.socialCount}>*/}
+              {/*                    <div>*/}
+              {/*                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                            <path d="M15.5 14.5002L20.5 9.50024L15.5 4.50024" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                            <path d="M4.49997 20.5V13.5C4.49997 12.4391 4.9214 11.4217 5.67154 10.6716C6.42169 9.92143 7.4391 9.5 8.49997 9.5H20.5" stroke="#424242" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                        </svg>*/}
+              {/*                    </div>*/}
+              {/*                    <div>*/}
+              {/*                        <p className={indexStyle.postNumberCount}>14</p>*/}
+              {/*                    </div>*/}
+              {/*                </div>*/}
+              {/*            </div>*/}
+              {/*        </div>*/}
+              {/*        <div>*/}
+              {/*            <div className={indexStyle.postContent}>*/}
+              {/*                <div>*/}
+              {/*                    <p className={indexStyle.postUserName}>Kelly Hudson  .  <span className={indexStyle.postUserProfession}>Fashion activist</span></p>*/}
+              {/*                </div>*/}
+              {/*                <div>*/}
+              {/*                    <h4 className={indexStyle.postContentHeading}>How important are shoes in your style?</h4>*/}
+              {/*                    <p className={indexStyle.postContentDate}>*/}
+              {/*                        Is it possible to assess a person just on the basis of their footwear? Obviously, nobody should criticize, but certainly, shoes say a lot about someone. It matters*/}
+              {/*                        for the outsiders that we meet every day...*/}
+              {/*                    </p>*/}
+              {/*                </div>*/}
+              {/*                <div className={indexStyle.postContentReadMore}>*/}
+              {/*                    <div>*/}
+              {/*                        <a href={'#'} className={indexStyle.postViewReadMore}>Read more</a>*/}
+              {/*                    </div>*/}
+              {/*                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+              {/*                        <path d="M2 11.4995H20.6667" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                        <path d="M11.3334 2.1665L20.6667 11.4998L11.3334 20.8332" stroke="#212121" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>*/}
+              {/*                    </svg>*/}
+              {/*                </div>*/}
+              {/*            </div>*/}
+              {/*        </div>*/}
+              {/*    </div>*/}
+              {/*</div>*/}
           </section>
       </main>
 
@@ -862,16 +862,16 @@ const Home: NextPage = () => {
               <div className={indexStyle.outlet}>
                   <div className={indexStyle.outletSliderDiv}>
                       <div>
-                          <p style={{fontWeight:400, fontSize:'39px'}}>Visit out outlets in</p>
+                          <p className={indexStyle.outletHeading}>Visit out outlets in</p>
                           <Slider {...setting2}>
                               <div>
-                                  <p style={{fontWeight:'400', fontSize: '95px'}}>Berlin</p>
+                                  <p className={indexStyle.outletName}>Berlin</p>
                               </div>
                           </Slider>
                       </div>
                       <div className={indexStyle.outletAddress}>
                           <div>
-                              <a href={'#'} style={{fontWeight:'bold', fontSize:'20px', lineHeight: '29px', textDecoration: 'none', color: "white"}}>See Address</a>
+                              <a href={'#'} className={indexStyle.outletAddressLink}>See Address</a>
                           </div>
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M5 12H19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -882,10 +882,10 @@ const Home: NextPage = () => {
               </div>
           </div>
           {/*footer links*/}
-          <div style={{display:'flex', justifyContent: 'center', alignItems: 'center'}}>
-              <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '80%', height: '100%'}}>
+          <div className={indexStyle.footerSecondPart}>
+              <div className={`${indexStyle.footerSecondPart} ${indexStyle.footerSecondSubPartDiv}`}>
                   <div className={indexStyle.footerSecondSection}>
-                      <div style={{display:'flex', gap: '112px'}}>
+                      <div className={indexStyle.footerLinkLeftDiv}>
                           <div>
                               <h6 className={indexStyle.footerLinkHeading}>Company Info</h6>
                               <div className={indexStyle.footerLinkText}>
@@ -914,15 +914,14 @@ const Home: NextPage = () => {
                           </div>
                       </div>
                       <div className={indexStyle.footerSignupSection}>
-                          <div style={{display:'flex', flexDirection:'column', gap:'24px'}}>
-                              <label style={{fontWeight:"bold", fontSize:'20px', color:'#212121'}}>Signup For The Latest News</label>
+                          <div className={indexStyle.footerSingUpSubDiv}>
+                              <label className={indexStyle.footerSingUpHeading}>Signup For The Latest News</label>
                               <div className={indexStyle.footerEmailInput}>
-                                  <input style={{padding:'18px 16px', width:"86%"}} type={"email"} placeholder={'Enter Email'}/>
+                                  <input type={"email"} placeholder={'Enter Email'}/>
                                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M1 8.5H15" stroke="#424242" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                       <path d="M8 1.5L15 8.5L8 15.5" stroke="#424242" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                   </svg>
-
                               </div>
                           </div>
                           <div className={indexStyle.footerContactSection}>

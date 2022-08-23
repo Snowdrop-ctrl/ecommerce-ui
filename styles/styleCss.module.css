@@ -792,6 +792,58 @@
     align-items: center;
 }
 
+.outletHeading {
+    font-weight: 400;
+    font-size: 39px;
+}
+
+.outletName {
+    font-weight: 400;
+    font-size: 95px;
+}
+
+.footerSecondPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSecondSubPartDiv {
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+.footerLinkLeftDiv {
+    display: flex;
+    gap: 112px;
+}
+
+.footerSingUpSubDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footerSingUpHeading {
+    font-weight: bold;
+    font-size: 20px;
+    color: #212121;
+}
+
+.footerEmailInput input {
+    width: 86%;
+    padding: 18px 16px;
+}
+
+.outletAddressLink {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (min-width: 600px ) {
     .hamBurgerMenu {
         display: none;
@@ -883,7 +935,7 @@
     }
 
     .outfitImage {
-        width: 500px;
+        width: 100%;
         height: 500px;
     }
 
@@ -981,4 +1033,84 @@
         height: 500px;
     }
 
+    .outletHeading {
+        font-size: 20px;
+    }
+
+    .outletName{
+        font-size: 45px;
+    }
+
+    .postUserDiv {
+        height: 85%;
+    }
+
+    .footerLinkLeftDiv {
+        gap: 30px;
+    }
+
+    .footerLinkHeading {
+        font-size: 16px;
+    }
+
+    .footerLinkText {
+        gap: 12px
+    }
+
+    .footerLinkText a {
+        font-size: 12px;
+    }
+
+    .footerLinkLeftDiv {
+        justify-content: space-between;
+    }
+
+    .footerSecondSubPartDiv {
+        width: 100%;
+    }
+
+    .GentleFormalExplore {
+        width: 100%
+    }
+
+    .exclusiveFirstItemDiv {
+        width: 100%;
+    }
+
+    .outletAddressLink {
+        font-size: 15px;
+    }
+
+    .footerSecondSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px
+    }
+
+    .footer {
+        margin-top: -1px;
+    }
+
+    .summerSection {
+        margin-top: 0;
+    }
+
+    .footerEmailInput input {
+        width: 100%;
+    }
+
+    .footerSingUpHeading {
+        font-size: 16px;
+    }
+
+    .footerSocialSection {
+        margin-top: 100px;
+        gap: 10px
+    }
+
+    .socialCountDiv {
+        margin: 0 20px 0 20px;
+        gap: 15px;
+    }
 }
