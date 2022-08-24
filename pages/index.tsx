@@ -973,10 +973,10 @@ const Home: NextPage = () => {
                           <hr/>
                           <div style={{display:'flex', justifyContent:'space-between'}}>
                               <div>
-                                  <div><p>All right &#169; Your Company,2022</p></div>
+                                  <div><p className={indexStyle.copyRightText}>All right &#169; Your Company,2022</p></div>
                               </div>
                               <div>
-                                  <div><p style={{color:'#7E92B3', fontSize:'14px'}}>Made with ❤️ <span style={{color:'#6C7E99', fontSize:'14px', fontWeight:'bold'}}>propelius Technology</span> </p></div>
+                                  <div><p className={indexStyle.footerBrandingText}>Made with ❤️ <span className={indexStyle.footerBrandingCompanyText}>propelius Technology</span> </p></div>
                               </div>
                           </div>
                       </div>

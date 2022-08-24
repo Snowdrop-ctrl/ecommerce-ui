@@ -844,6 +844,17 @@
     color: white;
 }
 
+.footerBrandingText {
+    color: #7E92B3;
+    font-size: 14px;
+}
+
+.footerBrandingCompanyText {
+    color: #6C7E99;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 600px ) {
     .hamBurgerMenu {
         display: none;
@@ -1003,11 +1014,11 @@
     }
 
     .collectionHeading {
-        font-size:45px;
+        font-size:30px;
     }
 
     .collectionSubHeading {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .summerSection {
@@ -1085,7 +1096,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 25px
+        gap: 45px
     }
 
     .footer {
@@ -1093,7 +1104,7 @@
     }
 
     .summerSection {
-        margin-top: 0;
+        margin-top: 40px;
     }
 
     .footerEmailInput input {
@@ -1105,7 +1116,7 @@
     }
 
     .footerSocialSection {
-        margin-top: 100px;
+        margin-top: 45px;
         gap: 10px
     }
 
@@ -1113,4 +1124,47 @@
         margin: 0 20px 0 20px;
         gap: 15px;
     }
+
+    .summerItemsText {
+        font-size: 25px;
+    }
+
+    .collectionText {
+        margin-left: 22px;
+        line-height: 5px;
+    }
+
+    .collectionTextDiv {
+        height: 35%;
+    }
+
+    .exclusiveParagraph {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .copyRightText {
+        font-size: 14px;
+    }
+
+    .footerBrandingText {
+        font-size: 12px;
+    }
+
+    .footerBrandingCompanyText {
+        font-size: 10px;
+    }
+
+    .footerSocialMedia {
+        gap: 25px;
+    }
+
+    .footerSignupSection {
+        gap: 10px;
+    }
+
+    /*.exclusiveFirstItemDiv div{*/
+    /*    width: 80%;*/
+    /*}*/
+
 }
